@@ -16,8 +16,12 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.pi14tech.com/git/cheatsheet/</guid>
-      <description>Table 1. Configuration CommandUsageCommandUsage Revert Changes git reset HEAD~Discard local commit. Changes will remain in localgit revert 8f937c6 -m 1Git revert a merged commit .
-git reset HEAD~Discard local commit. Changes will remain in localgit revert 8f937c6 -m 1 git revert 8f937c6 -m 2Git revert a merged commit </description>
+      <description>Table 1. Configuration Command
+Usagegit config --list
+See all the global variables that has been setgit config --global user.name &#34;John D&#34;
+Used to track who has made changes to files in local systemgit config --global user.email johndoe@e.com
+Used to track who has made changes to files in local systemgit config --global core.editor vm
+to set a default editor for git to use while prompting for committing messages Revert Changes git reset HEAD~Discard local commit.</description>
     </item>
     
     <item>
@@ -42,6 +46,40 @@ In case, the branch was pushed to remote and you want to rename the remote branc
 How to cherry pick?
 Make sure you are on the branch you want apply the commit to.
 `git checkout master`Cherry pick a specific commit feature you need from list of commits</description>
+    </item>
+    
+    <item>
+      <title>GIT - Create feature branch</title>
+      <link>https://www.pi14tech.com/git/branch-create-feature-branch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pi14tech.com/git/branch-create-feature-branch/</guid>
+      <description>I am currently on dev and want to switch to a particular branch
+git status
+git checkout -b feature/my-new-feature-branch-name</description>
+    </item>
+    
+    <item>
+      <title>GIT - Delete file</title>
+      <link>https://www.pi14tech.com/git/delete-file/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pi14tech.com/git/delete-file/</guid>
+      <description>Its pretty common that you want to remove a file that has already been commited to a remote repository. There are couple of options
+rm &amp;lt;file-name&amp;gt; git add &amp;lt;file-name&amp;gt;
+OR do `git rm &amp;lt;file-name&amp;gt;
+Essentially git rm is combination of first 2 commands.
+git rm --cached will remove the file from the index (staging it for deletion on the next commit), but keep your copy in the local file system</description>
+    </item>
+    
+    <item>
+      <title>GIT - Ignore</title>
+      <link>https://www.pi14tech.com/git/git-ignore/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.pi14tech.com/git/git-ignore/</guid>
+      <description>Its pretty common that you have some temp files or output or generated or target folders/files that you do not want to commit to remote version control system. Such files can be added onto a .gitignore file in the root of the source project. Sample entries for a gitignore file is
+[source.rb] .project .classpath /.settings/ .settings* /target/ *.iml *.versionsBackup /.idea/ </description>
     </item>
     
     <item>

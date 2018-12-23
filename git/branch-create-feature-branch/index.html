@@ -9,7 +9,7 @@
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
-    <title>Tag - delete :: A programmers notebook</title>
+    <title>GIT - Create feature branch :: A programmers notebook</title>
 
     
     <link href="/css/nucleus.css?1545543430" rel="stylesheet">
@@ -32,7 +32,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/git/delete-tag/">
+  <body class="" data-url="/git/branch-create-feature-branch/">
     <nav id="sidebar" class="">
 
 
@@ -158,7 +158,7 @@
  
   
     
-      <li data-nav-id="/git/branch-create-feature-branch/" title="GIT - Create feature branch" class="dd-item ">
+      <li data-nav-id="/git/branch-create-feature-branch/" title="GIT - Create feature branch" class="dd-item active">
         <a href="/git/branch-create-feature-branch/">
         GIT - Create feature branch
         
@@ -272,7 +272,7 @@
  
   
     
-      <li data-nav-id="/git/delete-tag/" title="Tag - delete" class="dd-item active">
+      <li data-nav-id="/git/delete-tag/" title="Tag - delete" class="dd-item ">
         <a href="/git/delete-tag/">
         Tag - delete
         
@@ -659,7 +659,7 @@
             
           
           
-            <a href='/'>A programmers notebook</a> > <a href='/git/'>GIT</a> > Tag - delete
+            <a href='/'>A programmers notebook</a> > <a href='/git/'>GIT</a> > GIT - Create feature branch
           
          
           
@@ -684,29 +684,15 @@
         
         <div id="body-inner">
           
-            <h1>Tag - delete</h1>
+            <h1>GIT - Create feature branch</h1>
           
 
         
 
 
-<section class="doc-section level-1"><h2 id="_git_delete_localremote_tag">GIT Delete Local/Remote Tag</h2><p>Its quite common during a release process or a tag process, you will need to retag a specific
-version or remove a tag that was already pushed to remote branch.</p>
-<p>To remove a tag if it has been pushed to remote repository</p>
-<p><code>git push --delete origin tagname</code></p>
-<p>If you also need to delete the local tag, use:</p>
-<p><code>git tag --delete tagname</code></p>
-<section class="doc-section level-2"><h3 id="_dissecting_what_happened_above">Dissecting what happened above</h3><p>Pushing a branch, tag, or other ref to a remote repository involves specifying "push where, what source, what destination?"</p>
-<p><code>git push where-to-push source-ref:destination-ref</code></p>
-<p>A real world example where you push your master branch to the origin&#8217;s master branch is:</p>
-<p><code>git push origin refs/heads/master:refs/heads/master</code></p>
-<p>Which because of default paths, can be shortened to:</p>
-<p><code>git push origin master:master</code></p>
-<p>Tags work the same way:</p>
-<p><code>git push origin refs/tags/release-1.0:refs/tags/release-1.0</code> which can also be shortened to:</p>
-<p><code>git push origin release-1.0:release-1.0</code></p>
-<p>By omitting the source ref (the part before the colon), you push 'nothing' to the destination, deleting the ref on the remote end.</p>
-<p><code>git push origin release-1.0:release-1.0</code></p></section></section>
+<p>I am currently on dev and want to switch to a particular branch</p>
+<p><code>git status</code></p>
+<p><code>git checkout -b feature/my-new-feature-branch-name</code></p>
 
 
 <footer class=" footline" >
@@ -810,6 +796,26 @@ version or remove a tag that was already pushed to remote branch.</p>
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
                 
                 
 
@@ -901,23 +907,6 @@ version or remove a tag that was already pushed to remote branch.</p>
             
         
                     
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -925,9 +914,6 @@ version or remove a tag that was already pushed to remote branch.</p>
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1157,10 +1143,10 @@ version or remove a tag that was already pushed to remote branch.</p>
 	 
 	 
 		
-			<a class="nav nav-prev" href="/git/create-tag/" title="Tag - create"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/git/git-cherry-pick/" title="Cherry pick"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/linux/" title="Linux" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/git/delete-file/" title="GIT - Delete file" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
