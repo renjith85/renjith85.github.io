@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://pi14tech.com/</loc>
+  </url>
+  
+  <url>
+    <loc>http://pi14tech.com/git/</loc>
+  </url>
+  
+  <url>
+    <loc>http://pi14tech.com/linux/</loc>
+  </url>
+  
+  <url>
+    <loc>http://pi14tech.com/site-building/</loc>
+  </url>
+  
+  <url>
+    <loc>http://pi14tech.com/posts/java/java/</loc>
+  </url>
+  
+  <url>
+    <loc>http://pi14tech.com/posts/linux/linux/</loc>
+  </url>
+  
+  <url>
+    <loc>http://pi14tech.com/posts/main/</loc>
+  </url>
+  
+  <url>
+    <loc>http://pi14tech.com/posts/scp/</loc>
+  </url>
+  
+  <url>
+    <loc>http://pi14tech.com/posts/test/</loc>
+  </url>
+  
+  <url>
+    <loc>http://pi14tech.com/site-building/references/</loc>
+  </url>
+  
+  <url>
+    <loc>http://pi14tech.com/technology/linux/linux/</loc>
+  </url>
+  
+  <url>
+    <loc>http://pi14tech.com/git/cheatsheet/</loc>
+  </url>
+  
+  <url>
+    <loc>http://pi14tech.com/git/rename-branch/</loc>
+  </url>
+  
+  <url>
+    <loc>http://pi14tech.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://pi14tech.com/git/git-cherry-pick/</loc>
+  </url>
+  
+  <url>
+    <loc>http://pi14tech.com/technology/java/java/</loc>
+  </url>
+  
+  <url>
+    <loc>http://pi14tech.com/git/git-merge/</loc>
+  </url>
+  
+  <url>
+    <loc>http://pi14tech.com/posts/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://pi14tech.com/git/git-revert-merged-commit/</loc>
+  </url>
+  
+  <url>
+    <loc>http://pi14tech.com/git/create-tag/</loc>
+  </url>
+  
+  <url>
+    <loc>http://pi14tech.com/git/delete-tag/</loc>
+  </url>
+  
+  <url>
+    <loc>http://pi14tech.com/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://pi14tech.com/technology/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://pi14tech.com/linux/scp/</loc>
+  </url>
+  
+  <url>
+    <loc>http://pi14tech.com/technology/linux/scp/</loc>
+  </url>
+  
+</urlset>

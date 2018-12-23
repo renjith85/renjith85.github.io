@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Site building on A programmers notebook</title>
+    <link>http://pi14tech.com/site-building/</link>
+    <description>Recent content in Site building on A programmers notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://pi14tech.com/site-building/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://pi14tech.com/site-building/references/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://pi14tech.com/site-building/references/</guid>
+      <description>== References
+https://axdlog.com/2018/using-hugo-and-travis-ci-to-deploy-blog-to-github-pages-automatically/
+https://github.com/matcornic/hugo-theme-learn
+https://discourse.gohugo.io/t/public-folder-and-its-content-not-generated/10535</description>
+    </item>
+    
+  </channel>
+</rss>
