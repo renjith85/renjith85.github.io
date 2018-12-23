@@ -1,174 +1,174 @@
 [
 {
-	"uri": "http://pi14tech.com/",
+	"uri": "https://www.pi14tech.com/",
 	"title": "A programmers notebook",
 	"tags": [],
 	"description": "",
 	"content": " A programmers notebook We all learn and solve so many problems daily using various tools, techologies, languages etc. And as programmers we normally store such information in our notebooks or some files and eventually search for that information whenver we require those. Basically these act us our back up memory tapes when we want to go back and reference things which we might have used once.\nAs we are playing catch up with technology daily and with reach of global information access, it is very important that we share our learnings and findings with others. This creates a feedback loop where we consume and produce information (however small it may be), it will be useful to another programmer. We all are here to share and learn from each other. Hopefully this notebook of mine will be useful to others.\n"
 },
 {
-	"uri": "http://pi14tech.com/git/",
+	"uri": "https://www.pi14tech.com/git/",
 	"title": "GIT",
 	"tags": [],
 	"description": "",
 	"content": " GIT GIT commands that will be handy to get through the daily developer hurdles for version management.\nGIT is a distributed version control system.Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. In this clients don’t just check out the latest snapshot of the files; rather, they fully mirror the repository, including its full history.Thus, if any server dies, and these systems were collaborating via that server, any of the client repositories can be copied back up to the server to restore it. Every clone is really a full backup of all the data.\n"
 },
 {
-	"uri": "http://pi14tech.com/linux/",
+	"uri": "https://www.pi14tech.com/linux/",
 	"title": "Linux",
 	"tags": [],
 	"description": "",
 	"content": " Linux Basic linus tips and tricks to navigate through daily programming hurdles\n"
 },
 {
-	"uri": "http://pi14tech.com/site-building/",
+	"uri": "https://www.pi14tech.com/site-building/",
 	"title": "Site building",
 	"tags": [],
 	"description": "",
 	"content": " Website Building In this article, I will describe various tools and techniques that I have tried to build and host this website. This was an interesting experiment on its own to utilize various open source and free technologies and learn how to host a website myself rather than using other hosted platforms like GoDaddy or Central etc. Trust me, those hosting solutions are good for people who are not programmers and want use of this but people with programming skills should definitely give this a try!\n"
 },
 {
-	"uri": "http://pi14tech.com/posts/java/java/",
+	"uri": "https://www.pi14tech.com/posts/java/java/",
 	"title": "",
 	"tags": [],
 	"description": "Java",
 	"content": "Handy techniques to deal with Java\n"
 },
 {
-	"uri": "http://pi14tech.com/posts/linux/linux/",
+	"uri": "https://www.pi14tech.com/posts/linux/linux/",
 	"title": "",
 	"tags": [],
 	"description": "Linux",
 	"content": "Handy techniques to deal with linux\n"
 },
 {
-	"uri": "http://pi14tech.com/posts/main/",
+	"uri": "https://www.pi14tech.com/posts/main/",
 	"title": "",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://pi14tech.com/posts/scp/",
+	"uri": "https://www.pi14tech.com/posts/scp/",
 	"title": "",
 	"tags": [],
 	"description": "Testttttt",
 	"content": "Secure copy protocol(SCP) allows files to be copied between machines/servers in a secure way.\nUsage\nscp \u0026lt;source-specification\u0026gt; \u0026lt;destination-specification\u0026gt;\n Tip: Format for a resource in remote(source or destination) is: user@machine:filename\nFormat for file specification on local system is : filenameWhile accessing a remote servermake sure user account exists in remote destinationmake sure filesystem has sufficient permission to be accessed by user account Examples:\nCopy a file(say \"sample.adoc\") from local to remote system(User is in local system shell) scp sample.adoc remote-user@\u0026lt;machine-ip\u0026gt;:file-location\n Copy a file(say \"sample.adoc\") from remote system onto local system current folder(User is in local system shell) scp remote-user@\u0026lt;machine-ip\u0026gt;:\u0026lt;absolute-location-of-sample.adoc\u0026gt; .\n Copy a remote system file onto local system tmp folder(User is in local system shell) scp remote-user@\u0026lt;machine-ip\u0026gt;:\u0026lt;location-of-remote-file\u0026gt; /tmp\n SCP using ssh keyIn most of the scenarios, you will be required to use a certificate(.pub or .pem or ssh) key to access the underlying servers.\nscp -i \u0026lt;identity-file\u0026gt; \u0026lt;source-specification\u0026gt; \u0026lt;destination-specification\u0026gt;\n Important: Make sure your identity file has only limited permission(chmod 400 \u0026lt;identity-file\u0026gt;, if not some servers will complain the access key is too open\n "
 },
 {
-	"uri": "http://pi14tech.com/posts/test/",
+	"uri": "https://www.pi14tech.com/posts/test/",
 	"title": "",
 	"tags": [],
 	"description": "",
 	"content": " A Fast and Flexible Static Site Generator built with love by spf13 and friends in Go.\nWebsite | Forum | Chat | Documentation | Installation Guide | Twitter\n   \nOverview Hugo is a static site generator written in Go. It is optimized for speed, easy use and configurability. Hugo takes a directory with content and templates and renders them into a full HTML website.\nHugo relies on Markdown files with front matter for meta data. And you can run Hugo from any directory. This works well for shared hosts and other systems where you don’t have a privileged account.\nHugo renders a typical website of moderate size in a fraction of a second. A good rule of thumb is that each piece of content renders in around 1 millisecond.\nHugo is meant to work well for any kind of website including blogs, tumbles and docs.\nSupported Architectures Currently, we provide pre-built Hugo binaries for Windows, Linux, FreeBSD, NetBSD and OS\u0026nbsp;X (Darwin) for x64, i386 and ARM architectures.\nHugo may also be compiled from source wherever the Go compiler tool chain can run, e.g. for other operating systems including DragonFly BSD, OpenBSD, Plan\u0026nbsp;9 and Solaris.\nComplete documentation is available at Hugo Documentation.\nChoose How to Install If you want to use Hugo as your site generator, simply install the Hugo binaries. The Hugo binaries have no external dependencies.\nTo contribute to the Hugo source code or documentation, you should fork the Hugo GitHub project and clone it to your local machine.\nFinally, you can install the Hugo source code with go, build the binaries yourself, and run Hugo that way. Building the binaries is an easy task for an experienced go getter.\nInstall Hugo as Your Site Generator (Binary Install) Use the installation instructions in the Hugo documentation.\nClone the Hugo Project (Contributor)  Make sure your local environment has the following software installed:\n Git Mercurial Go 1.3+ (Go 1.4+ on Windows, see Go Issue #8090)  Fork the Hugo project on GitHub.\n Clone your fork:\ngit clone https://github.com/YOURNAME/hugo  Change into the hugo directory:\ncd hugo  Install the Hugo project’s package dependencies:\ngo get -u -v github.com/spf13/hugo  Use a symbolic link to add your locally cloned Hugo repository to your $GOPATH, assuming you prefer doing development work outside of $GOPATH:\nrm -rf \u0026quot;$GOPATH/src/github.com/spf13/hugo\u0026quot; ln -s `pwd` \u0026quot;$GOPATH/src/github.com/spf13/hugo\u0026quot;  Go expects all of your libraries to be found in$GOPATH.\n  Build and Install the Binaries from Source (Advanced Install) Add Hugo and its package dependencies to your go src directory.\ngo get -v github.com/spf13/hugo  Once the get completes, you should find your new hugo (or hugo.exe) executable sitting inside $GOPATH/bin/.\nTo update Hugo’s dependencies, use go get with the -u option.\ngo get -u -v github.com/spf13/hugo  Contributing to Hugo We welcome contributions to Hugo of any kind including documentation, themes, organization, tutorials, blog posts, bug reports, issues, feature requests, feature implementation, pull requests, answering questions on the forum, helping to manage issues, etc. The Hugo community and maintainers are very active and helpful and the project benefits greatly from this activity.\n\nIf you have any questions about how to contribute or what to contribute please ask on the forum\nCode Contribution Guideline We welcome your contributions. To make the process as seamless as possible, we ask for the following:\n Go ahead and fork the project and make your changes. We encourage pull requests to discuss code changes. When you’re ready to create a pull request, be sure to:  Have test cases for the new code. If you have questions about how to do it, please ask in your pull request. Run go fmt Squash your commits into a single commit. git rebase -i. It’s okay to force update your pull request. This blog article is a good resource for learning how to write good commit messages, the most important part being that each commit message should have a title/subject in imperative mode without trailing period: \u0026ldquo;Return error on wrong use of the Paginator\u0026rdquo;, NOT \u0026ldquo;Returning some error.\u0026rdquo; Also, if your commit references one or more GitHub issues, always end your commit message body with See #1234 or Fixes #1234. Replace 1234 with the GitHub issue ID. The last example will close the issue when the commit is merged into master. Make sure go test ./... passes, and go build completes. Our Travis CI loop (Linux) and AppVeyor (Windows) will catch most things that are missing.   Building Hugo with Your Changes cd /path/to/hugo go build -o hugo main.go mv hugo /usr/local/bin/  Adding compile information to Hugo When Hugo is built using the above steps, the version sub-command will include the mdate of the Hugo executable, similar to the following:\nHugo Static Site Generator v0.13-DEV buildDate: 2014-12-24T04:46:03-07:00  Instead, it is possible to have the version sub-command return information about the git commit used and time of compilation using build flags.\nTo do this, replace the go build command with the following (replace /path/to/hugo with the actual path):\ngo build -ldflags \u0026quot;-X /path/to/hugo/hugolib.CommitHash `git rev-parse --short HEAD 2\u0026gt;/dev/null` -X github.com/spf13/hugo/hugolib.BuildDate `date +%FT%T%z`\u0026quot;  This will result in hugo version output that looks similar to:\nHugo Static Site Generator v0.13-DEV-8042E77 buildDate: 2014-12-25T03:25:57-07:00  Alternatively, just run make \u0026mdash; all the “magic” above is already in the Makefile. :wink:\nRunning Hugo cd /path/to/hugo go install github.com/spf13/hugo/hugolib go run main.go  Complete documentation is available at Hugo Documentation.\n \n"
 },
 {
-	"uri": "http://pi14tech.com/site-building/references/",
+	"uri": "https://www.pi14tech.com/site-building/references/",
 	"title": "",
 	"tags": [],
 	"description": "",
 	"content": "== References\nhttps://axdlog.com/2018/using-hugo-and-travis-ci-to-deploy-blog-to-github-pages-automatically/\nhttps://github.com/matcornic/hugo-theme-learn\nhttps://discourse.gohugo.io/t/public-folder-and-its-content-not-generated/10535\n"
 },
 {
-	"uri": "http://pi14tech.com/technology/linux/linux/",
+	"uri": "https://www.pi14tech.com/technology/linux/linux/",
 	"title": "",
 	"tags": [],
 	"description": "Linux",
 	"content": "Handy techniques to deal with linux\n"
 },
 {
-	"uri": "http://pi14tech.com/git/cheatsheet/",
+	"uri": "https://www.pi14tech.com/git/cheatsheet/",
 	"title": "1. Cheatsheet",
 	"tags": [],
 	"description": "",
 	"content": "Table 1. Configuration CommandUsageCommandUsage Revert Changes git reset HEAD~Discard local commit. Changes will remain in localgit revert 8f937c6 -m 1Git revert a merged commit .\ngit reset HEAD~Discard local commit. Changes will remain in localgit revert 8f937c6 -m 1 git revert 8f937c6 -m 2Git revert a merged commit "
 },
 {
-	"uri": "http://pi14tech.com/git/rename-branch/",
+	"uri": "https://www.pi14tech.com/git/rename-branch/",
 	"title": "Branch - rename",
 	"tags": [],
 	"description": "",
 	"content": "GIT Rename branchIt\u0026#8217;s quite common we start using a temporary name for a feature branch we are working on, and we have to rename the branch to something more meaningful as our work progresses.\nIn case, the git branch is still in local and has not been pushed to remote, below command can be used to rename the branch locally\nRename branch locally git branch -m old_branch new_branch\nIn case, the branch was pushed to remote and you want to rename the remote branch as well\nDelete old branch git push origin :old_branch\nPush the new branch, set local branch to track the new remote git push --set-upstream origin new_branch\n "
 },
 {
-	"uri": "http://pi14tech.com/categories/",
+	"uri": "https://www.pi14tech.com/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://pi14tech.com/git/git-cherry-pick/",
+	"uri": "https://www.pi14tech.com/git/git-cherry-pick/",
 	"title": "Cherry pick",
 	"tags": [],
 	"description": "",
 	"content": "GIT cherry pickCherry picking in git means to choose a commit from one branch and apply it onto another. This is in contrast with other ways such as merge and rebase which normally applies many commits onto a another branch.\nHow to cherry pick?\nMake sure you are on the branch you want apply the commit to.\n`git checkout master`Cherry pick a specific commit feature you need from list of commits\n`git cherry-pick \u0026lt;commit-hash\u0026gt;` "
 },
 {
-	"uri": "http://pi14tech.com/technology/java/java/",
+	"uri": "https://www.pi14tech.com/technology/java/java/",
 	"title": "Generics",
 	"tags": [],
 	"description": "Java",
 	"content": "Handy techniques to deal with Java\n"
 },
 {
-	"uri": "http://pi14tech.com/git/git-merge/",
+	"uri": "https://www.pi14tech.com/git/git-merge/",
 	"title": "Merge",
 	"tags": [],
 	"description": "",
 	"content": "GIT MergeMerge bugfix/feature onto master/devSay your bug fix branch is called bugfix and you want to merge it into master:\ngit checkout master\ngit merge --squash bugfix\ngit commit\nThis will take all the commits from the bugfix branch, squash them into 1 commit and then merge it with your master branch.\nIn case you think there are possible merge conflicts that can occur between master and bugfix but you know that bugfix branch has the correct changes\ngit merge --squash bugfix -X theirs\n-X is --strategy-option It means to accept the incoming version as compared to the current git branch I am on\n Keeping feature branch upto date with devIt\u0026#8217;s quite common that you start working on branch off a dev or master remote branch and there has been quite a lot of new commits on those branches. You will mostly need to merge those changes back into your working branch to ensure your functionality still works with all new commits before you can raise a pull request for review etc.\nTo keep feature branch in sync with dev (this would ensure local codebase has all updates f rom dev all the time)\ngit checkout dev git pull git checkout feature/xx-my-feature-branch git merge dev\n "
 },
 {
-	"uri": "http://pi14tech.com/posts/",
+	"uri": "https://www.pi14tech.com/posts/",
 	"title": "Posts",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://pi14tech.com/git/git-revert-merged-commit/",
+	"uri": "https://www.pi14tech.com/git/git-revert-merged-commit/",
 	"title": "Revert - Merged Commit",
 	"tags": [],
 	"description": "",
 	"content": "GIT revert merged commitGit revert a merged commit\nThe -m option specifies the parent number. This is because a merge commit has more than one parent, and Git does not know automatically which parent was the mainline, and which parent was the branch you want to un-merge.\nWhen you view a merge commit in the output of git log, you will see its parents listed on the line that begins with Merge:\ncommit 8f937c683929b08379097828c8a04350b9b8e183 Merge: 8989ee0 7c6b236\ncommit 8f937c683929b08379097828c8a04350b9b8e183 Merge: 8989ee0 7c6b236 Author: Ben James \u0026lt;ben@example.com\u0026gt; Date: Wed Aug 17 22:49:41 2011 +0100\nMerge branch 'gh-pages'\nConflicts: README In this situation, git revert 8f937c6 -m 1 will get you the tree as it was in 8989ee0, and git revert -m 2 will reinstate the tree as it was in 7c6b236.\n "
 },
 {
-	"uri": "http://pi14tech.com/git/create-tag/",
+	"uri": "https://www.pi14tech.com/git/create-tag/",
 	"title": "Tag - create",
 	"tags": [],
 	"description": "",
 	"content": "GIT Create TagTo create a tag on your current branch, run this:\ngit tag \u0026lt;tagname\u0026gt;\nThis will create a local tag with the current state of the branch you are on. When pushing to your remote repo, tags are NOT included by default. You will need to explicitly say that you want to push your tags to your remote repo:\ngit push origin —tags\nNote: This command will push all the tags in your local machine. Try to avoid using this unless you want to purposefully push all the tags available on your machine. One of the problems could be someone could have removed remote tags, but you will repush tags from your local repo, in case you had pulled it down before deletion\n Or if you just want to push a single tag:\ngit push origin \u0026lt;tag\u0026gt;\n "
 },
 {
-	"uri": "http://pi14tech.com/git/delete-tag/",
+	"uri": "https://www.pi14tech.com/git/delete-tag/",
 	"title": "Tag - delete",
 	"tags": [],
 	"description": "",
 	"content": "GIT Delete Local/Remote TagIts quite common during a release process or a tag process, you will need to retag a specific version or remove a tag that was already pushed to remote branch.\nTo remove a tag if it has been pushed to remote repository\ngit push --delete origin tagname\nIf you also need to delete the local tag, use:\ngit tag --delete tagname\nDissecting what happened abovePushing a branch, tag, or other ref to a remote repository involves specifying \"push where, what source, what destination?\"\ngit push where-to-push source-ref:destination-ref\nA real world example where you push your master branch to the origin\u0026#8217;s master branch is:\ngit push origin refs/heads/master:refs/heads/master\nWhich because of default paths, can be shortened to:\ngit push origin master:master\nTags work the same way:\ngit push origin refs/tags/release-1.0:refs/tags/release-1.0 which can also be shortened to:\ngit push origin release-1.0:release-1.0\nBy omitting the source ref (the part before the colon), you push 'nothing' to the destination, deleting the ref on the remote end.\ngit push origin release-1.0:release-1.0\n "
 },
 {
-	"uri": "http://pi14tech.com/tags/",
+	"uri": "https://www.pi14tech.com/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://pi14tech.com/technology/",
+	"uri": "https://www.pi14tech.com/technology/",
 	"title": "Technology",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://pi14tech.com/linux/scp/",
+	"uri": "https://www.pi14tech.com/linux/scp/",
 	"title": "scp",
 	"tags": [],
 	"description": "",
 	"content": "Secure copy protocol(SCP) allows files to be copied between machines/servers in a secure way.\nUsage\nscp \u0026lt;source-specification\u0026gt; \u0026lt;destination-specification\u0026gt;\n Tip: Format for a resource in remote(source or destination) is: user@machine:filename\nFormat for file specification on local system is : filenameWhile accessing a remote servermake sure user account exists in remote destinationmake sure filesystem has sufficient permission to be accessed by user account Examples:\nCopy a file(say \"sample.adoc\") from local to remote system(User is in local system shell) scp sample.adoc remote-user@\u0026lt;machine-ip\u0026gt;:file-location\n Copy a file(say \"sample.adoc\") from remote system onto local system current folder(User is in local system shell) scp remote-user@\u0026lt;machine-ip\u0026gt;:\u0026lt;absolute-location-of-sample.adoc\u0026gt; .\n Copy a remote system file onto local system tmp folder(User is in local system shell) scp remote-user@\u0026lt;machine-ip\u0026gt;:\u0026lt;location-of-remote-file\u0026gt; /tmp\n SCP using ssh keyIn most of the scenarios, you will be required to use a certificate(.pub or .pem or ssh) key to access the underlying servers.\nscp -i \u0026lt;identity-file\u0026gt; \u0026lt;source-specification\u0026gt; \u0026lt;destination-specification\u0026gt;\n Important: Make sure your identity file has only limited permission(chmod 400 \u0026lt;identity-file\u0026gt;, if not some servers will complain the access key is too open\n "
 },
 {
-	"uri": "http://pi14tech.com/technology/linux/scp/",
+	"uri": "https://www.pi14tech.com/technology/linux/scp/",
 	"title": "scp",
 	"tags": [],
 	"description": "Testttttt",

@@ -2,47 +2,47 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>A programmers notebook</title>
-    <link>http://pi14tech.com/</link>
+    <link>https://www.pi14tech.com/</link>
     <description>Recent content on A programmers notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://pi14tech.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.pi14tech.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>http://pi14tech.com/posts/java/java/</link>
+      <link>https://www.pi14tech.com/posts/java/java/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://pi14tech.com/posts/java/java/</guid>
+      <guid>https://www.pi14tech.com/posts/java/java/</guid>
       <description>Handy techniques to deal with Java</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://pi14tech.com/posts/linux/linux/</link>
+      <link>https://www.pi14tech.com/posts/linux/linux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://pi14tech.com/posts/linux/linux/</guid>
+      <guid>https://www.pi14tech.com/posts/linux/linux/</guid>
       <description>Handy techniques to deal with linux</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://pi14tech.com/posts/main/</link>
+      <link>https://www.pi14tech.com/posts/main/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://pi14tech.com/posts/main/</guid>
+      <guid>https://www.pi14tech.com/posts/main/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://pi14tech.com/posts/scp/</link>
+      <link>https://www.pi14tech.com/posts/scp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://pi14tech.com/posts/scp/</guid>
+      <guid>https://www.pi14tech.com/posts/scp/</guid>
       <description>Secure copy protocol(SCP) allows files to be copied between machines/servers in a secure way.
 Usage
 scp &amp;lt;source-specification&amp;gt; &amp;lt;destination-specification&amp;gt;
@@ -53,10 +53,10 @@ Copy a file(say &#34;sample.adoc&#34;) from local to remote system(User is in lo
     
     <item>
       <title></title>
-      <link>http://pi14tech.com/posts/test/</link>
+      <link>https://www.pi14tech.com/posts/test/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://pi14tech.com/posts/test/</guid>
+      <guid>https://www.pi14tech.com/posts/test/</guid>
       <description>A Fast and Flexible Static Site Generator built with love by spf13 and friends in Go.
 Website | Forum | Chat | Documentation | Installation Guide | Twitter
    
@@ -66,10 +66,10 @@ Hugo relies on Markdown files with front matter for meta data.</description>
     
     <item>
       <title></title>
-      <link>http://pi14tech.com/site-building/references/</link>
+      <link>https://www.pi14tech.com/site-building/references/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://pi14tech.com/site-building/references/</guid>
+      <guid>https://www.pi14tech.com/site-building/references/</guid>
       <description>== References
 https://axdlog.com/2018/using-hugo-and-travis-ci-to-deploy-blog-to-github-pages-automatically/
 https://github.com/matcornic/hugo-theme-learn
@@ -78,29 +78,29 @@ https://discourse.gohugo.io/t/public-folder-and-its-content-not-generated/10535<
     
     <item>
       <title></title>
-      <link>http://pi14tech.com/technology/linux/linux/</link>
+      <link>https://www.pi14tech.com/technology/linux/linux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://pi14tech.com/technology/linux/linux/</guid>
+      <guid>https://www.pi14tech.com/technology/linux/linux/</guid>
       <description>Handy techniques to deal with linux</description>
     </item>
     
     <item>
       <title>1. Cheatsheet</title>
-      <link>http://pi14tech.com/git/cheatsheet/</link>
+      <link>https://www.pi14tech.com/git/cheatsheet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://pi14tech.com/git/cheatsheet/</guid>
+      <guid>https://www.pi14tech.com/git/cheatsheet/</guid>
       <description>Table 1. Configuration CommandUsageCommandUsage Revert Changes git reset HEAD~Discard local commit. Changes will remain in localgit revert 8f937c6 -m 1Git revert a merged commit .
 git reset HEAD~Discard local commit. Changes will remain in localgit revert 8f937c6 -m 1 git revert 8f937c6 -m 2Git revert a merged commit </description>
     </item>
     
     <item>
       <title>Branch - rename</title>
-      <link>http://pi14tech.com/git/rename-branch/</link>
+      <link>https://www.pi14tech.com/git/rename-branch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://pi14tech.com/git/rename-branch/</guid>
+      <guid>https://www.pi14tech.com/git/rename-branch/</guid>
       <description>GIT Rename branchIt&amp;#8217;s quite common we start using a temporary name for a feature branch we are working on, and we have to rename the branch to something more meaningful as our work progresses.
 In case, the git branch is still in local and has not been pushed to remote, below command can be used to rename the branch locally
 Rename branch locally git branch -m old_branch new_branch
@@ -109,10 +109,10 @@ In case, the branch was pushed to remote and you want to rename the remote branc
     
     <item>
       <title>Cherry pick</title>
-      <link>http://pi14tech.com/git/git-cherry-pick/</link>
+      <link>https://www.pi14tech.com/git/git-cherry-pick/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://pi14tech.com/git/git-cherry-pick/</guid>
+      <guid>https://www.pi14tech.com/git/git-cherry-pick/</guid>
       <description>GIT cherry pickCherry picking in git means to choose a commit from one branch and apply it onto another. This is in contrast with other ways such as merge and rebase which normally applies many commits onto a another branch.
 How to cherry pick?
 Make sure you are on the branch you want apply the commit to.
@@ -121,19 +121,19 @@ Make sure you are on the branch you want apply the commit to.
     
     <item>
       <title>Generics</title>
-      <link>http://pi14tech.com/technology/java/java/</link>
+      <link>https://www.pi14tech.com/technology/java/java/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://pi14tech.com/technology/java/java/</guid>
+      <guid>https://www.pi14tech.com/technology/java/java/</guid>
       <description>Handy techniques to deal with Java</description>
     </item>
     
     <item>
       <title>Merge</title>
-      <link>http://pi14tech.com/git/git-merge/</link>
+      <link>https://www.pi14tech.com/git/git-merge/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://pi14tech.com/git/git-merge/</guid>
+      <guid>https://www.pi14tech.com/git/git-merge/</guid>
       <description>GIT MergeMerge bugfix/feature onto master/devSay your bug fix branch is called bugfix and you want to merge it into master:
 git checkout master
 git merge --squash bugfix
@@ -144,10 +144,10 @@ In case you think there are possible merge conflicts that can occur between mast
     
     <item>
       <title>Revert - Merged Commit</title>
-      <link>http://pi14tech.com/git/git-revert-merged-commit/</link>
+      <link>https://www.pi14tech.com/git/git-revert-merged-commit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://pi14tech.com/git/git-revert-merged-commit/</guid>
+      <guid>https://www.pi14tech.com/git/git-revert-merged-commit/</guid>
       <description>GIT revert merged commitGit revert a merged commit
 The -m option specifies the parent number. This is because a merge commit has more than one parent, and Git does not know automatically which parent was the mainline, and which parent was the branch you want to un-merge.
 When you view a merge commit in the output of git log, you will see its parents listed on the line that begins with Merge:</description>
@@ -155,10 +155,10 @@ When you view a merge commit in the output of git log, you will see its parents 
     
     <item>
       <title>Tag - create</title>
-      <link>http://pi14tech.com/git/create-tag/</link>
+      <link>https://www.pi14tech.com/git/create-tag/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://pi14tech.com/git/create-tag/</guid>
+      <guid>https://www.pi14tech.com/git/create-tag/</guid>
       <description>GIT Create TagTo create a tag on your current branch, run this:
 git tag &amp;lt;tagname&amp;gt;
 This will create a local tag with the current state of the branch you are on. When pushing to your remote repo, tags are NOT included by default. You will need to explicitly say that you want to push your tags to your remote repo:
@@ -168,10 +168,10 @@ Note: This command will push all the tags in your local machine.</description>
     
     <item>
       <title>Tag - delete</title>
-      <link>http://pi14tech.com/git/delete-tag/</link>
+      <link>https://www.pi14tech.com/git/delete-tag/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://pi14tech.com/git/delete-tag/</guid>
+      <guid>https://www.pi14tech.com/git/delete-tag/</guid>
       <description>GIT Delete Local/Remote TagIts quite common during a release process or a tag process, you will need to retag a specific version or remove a tag that was already pushed to remote branch.
 To remove a tag if it has been pushed to remote repository
 git push --delete origin tagname
@@ -182,10 +182,10 @@ Dissecting what happened abovePushing a branch, tag, or other ref to a remote re
     
     <item>
       <title>scp</title>
-      <link>http://pi14tech.com/linux/scp/</link>
+      <link>https://www.pi14tech.com/linux/scp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://pi14tech.com/linux/scp/</guid>
+      <guid>https://www.pi14tech.com/linux/scp/</guid>
       <description>Secure copy protocol(SCP) allows files to be copied between machines/servers in a secure way.
 Usage
 scp &amp;lt;source-specification&amp;gt; &amp;lt;destination-specification&amp;gt;
@@ -196,10 +196,10 @@ Copy a file(say &#34;sample.adoc&#34;) from local to remote system(User is in lo
     
     <item>
       <title>scp</title>
-      <link>http://pi14tech.com/technology/linux/scp/</link>
+      <link>https://www.pi14tech.com/technology/linux/scp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://pi14tech.com/technology/linux/scp/</guid>
+      <guid>https://www.pi14tech.com/technology/linux/scp/</guid>
       <description>Secure copy protocol(SCP) allows files to be copied between machines/servers in a secure way.
 Usage
 scp &amp;lt;source-specification&amp;gt; &amp;lt;destination-specification&amp;gt;
