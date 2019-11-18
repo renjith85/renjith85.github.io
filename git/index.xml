@@ -2,136 +2,140 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GIT on A programmers notebook</title>
-    <link>https://www.pi14tech.com/git/</link>
+    <link>https://pi14tech.com/git/</link>
     <description>Recent content in GIT on A programmers notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://www.pi14tech.com/git/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://pi14tech.com/git/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>1. Cheatsheet</title>
-      <link>https://www.pi14tech.com/git/cheatsheet/</link>
+      <link>https://pi14tech.com/git/cheatsheet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.pi14tech.com/git/cheatsheet/</guid>
-      <description>Table 1. Configuration Command
-Usagegit config --list
-See all the global variables that has been setgit config --global user.name &#34;John D&#34;
-Used to track who has made changes to files in local systemgit config --global user.email johndoe@e.com
-Used to track who has made changes to files in local systemgit config --global core.editor vm
-to set a default editor for git to use while prompting for committing messages Revert Changes git reset HEAD~Discard local commit.</description>
+      <guid>https://pi14tech.com/git/cheatsheet/</guid>
+      <description>Table 1. Configuration     Command
+ Usage
+   git config --list
+ See all the global variables that has been set
+   git config --global user.name &#34;John D&#34;
+ Used to track who has made changes to files in local system
+   git config --global user.email johndoe@e.com
+ Used to track who has made changes to files in local system
+   git config --global core.</description>
     </item>
     
     <item>
       <title>Branch - rename</title>
-      <link>https://www.pi14tech.com/git/rename-branch/</link>
+      <link>https://pi14tech.com/git/rename-branch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.pi14tech.com/git/rename-branch/</guid>
-      <description>GIT Rename branchIt&amp;#8217;s quite common we start using a temporary name for a feature branch we are working on, and we have to rename the branch to something more meaningful as our work progresses.
-In case, the git branch is still in local and has not been pushed to remote, below command can be used to rename the branch locally
-Rename branch locally git branch -m old_branch new_branch
-In case, the branch was pushed to remote and you want to rename the remote branch as well</description>
+      <guid>https://pi14tech.com/git/rename-branch/</guid>
+      <description>GIT Rename branch It&amp;#8217;s quite common we start using a temporary name for a feature branch we are working on, and we have to rename the branch to something more meaningful as our work progresses.
+ In case, the git branch is still in local and has not been pushed to remote, below command can be used to rename the branch locally
+   Rename branch locally
+   git branch -m old_branch new_branch</description>
     </item>
     
     <item>
       <title>Cherry pick</title>
-      <link>https://www.pi14tech.com/git/git-cherry-pick/</link>
+      <link>https://pi14tech.com/git/git-cherry-pick/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.pi14tech.com/git/git-cherry-pick/</guid>
-      <description>GIT cherry pickCherry picking in git means to choose a commit from one branch and apply it onto another. This is in contrast with other ways such as merge and rebase which normally applies many commits onto a another branch.
-How to cherry pick?
-Make sure you are on the branch you want apply the commit to.
-`git checkout master`Cherry pick a specific commit feature you need from list of commits</description>
+      <guid>https://pi14tech.com/git/git-cherry-pick/</guid>
+      <description>GIT cherry pick Cherry picking in git means to choose a commit from one branch and apply it onto another. This is in contrast with other ways such as merge and rebase which normally applies many commits onto a another branch.
+ How to cherry pick?
+   Make sure you are on the branch you want apply the commit to.
+`git checkout master`     Cherry pick a specific commit feature you need from list of commits</description>
     </item>
     
     <item>
       <title>GIT - Create feature branch</title>
-      <link>https://www.pi14tech.com/git/branch-create-feature-branch/</link>
+      <link>https://pi14tech.com/git/branch-create-feature-branch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.pi14tech.com/git/branch-create-feature-branch/</guid>
+      <guid>https://pi14tech.com/git/branch-create-feature-branch/</guid>
       <description>I am currently on dev and want to switch to a particular branch
-git status
-git checkout -b feature/my-new-feature-branch-name</description>
+ git status
+ git checkout -b feature/my-new-feature-branch-name
+ </description>
     </item>
     
     <item>
       <title>GIT - Delete file</title>
-      <link>https://www.pi14tech.com/git/delete-file/</link>
+      <link>https://pi14tech.com/git/delete-file/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.pi14tech.com/git/delete-file/</guid>
+      <guid>https://pi14tech.com/git/delete-file/</guid>
       <description>Its pretty common that you want to remove a file that has already been commited to a remote repository. There are couple of options
-rm &amp;lt;file-name&amp;gt; git add &amp;lt;file-name&amp;gt;
-OR do `git rm &amp;lt;file-name&amp;gt;
-Essentially git rm is combination of first 2 commands.
-git rm --cached will remove the file from the index (staging it for deletion on the next commit), but keep your copy in the local file system</description>
+ rm &amp;lt;file-name&amp;gt; git add &amp;lt;file-name&amp;gt;
+ OR do `git rm &amp;lt;file-name&amp;gt;
+ Essentially git rm is combination of first 2 commands.
+ git rm --cached will remove the file from the index (staging it for deletion on the next commit), but keep your copy in the local file system</description>
     </item>
     
     <item>
       <title>GIT - Ignore</title>
-      <link>https://www.pi14tech.com/git/git-ignore/</link>
+      <link>https://pi14tech.com/git/git-ignore/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.pi14tech.com/git/git-ignore/</guid>
+      <guid>https://pi14tech.com/git/git-ignore/</guid>
       <description>Its pretty common that you have some temp files or output or generated or target folders/files that you do not want to commit to remote version control system. Such files can be added onto a .gitignore file in the root of the source project. Sample entries for a gitignore file is
-[source.rb] .project .classpath /.settings/ .settings* /target/ *.iml *.versionsBackup /.idea/ </description>
+ [source.rb] .project .classpath /.settings/ .settings* /target/ *.iml *.versionsBackup /.idea/   </description>
     </item>
     
     <item>
       <title>Merge</title>
-      <link>https://www.pi14tech.com/git/git-merge/</link>
+      <link>https://pi14tech.com/git/git-merge/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.pi14tech.com/git/git-merge/</guid>
-      <description>GIT MergeMerge bugfix/feature onto master/devSay your bug fix branch is called bugfix and you want to merge it into master:
-git checkout master
-git merge --squash bugfix
-git commit
-This will take all the commits from the bugfix branch, squash them into 1 commit and then merge it with your master branch.
-In case you think there are possible merge conflicts that can occur between master and bugfix but you know that bugfix branch has the correct changes</description>
+      <guid>https://pi14tech.com/git/git-merge/</guid>
+      <description>GIT Merge Merge bugfix/feature onto master/dev Say your bug fix branch is called bugfix and you want to merge it into master:
+ git checkout master
+ git merge --squash bugfix
+ git commit
+ This will take all the commits from the bugfix branch, squash them into 1 commit and then merge it with your master branch.
+ In case you think there are possible merge conflicts that can occur between master and bugfix but you know that bugfix branch has the correct changes</description>
     </item>
     
     <item>
       <title>Revert - Merged Commit</title>
-      <link>https://www.pi14tech.com/git/git-revert-merged-commit/</link>
+      <link>https://pi14tech.com/git/git-revert-merged-commit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.pi14tech.com/git/git-revert-merged-commit/</guid>
-      <description>GIT revert merged commitGit revert a merged commit
-The -m option specifies the parent number. This is because a merge commit has more than one parent, and Git does not know automatically which parent was the mainline, and which parent was the branch you want to un-merge.
-When you view a merge commit in the output of git log, you will see its parents listed on the line that begins with Merge:</description>
+      <guid>https://pi14tech.com/git/git-revert-merged-commit/</guid>
+      <description>GIT revert merged commit Git revert a merged commit
+ The -m option specifies the parent number. This is because a merge commit has more than one parent, and Git does not know automatically which parent was the mainline, and which parent was the branch you want to un-merge.
+ When you view a merge commit in the output of git log, you will see its parents listed on the line that begins with Merge:</description>
     </item>
     
     <item>
       <title>Tag - create</title>
-      <link>https://www.pi14tech.com/git/create-tag/</link>
+      <link>https://pi14tech.com/git/create-tag/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.pi14tech.com/git/create-tag/</guid>
-      <description>GIT Create TagTo create a tag on your current branch, run this:
-git tag &amp;lt;tagname&amp;gt;
-This will create a local tag with the current state of the branch you are on. When pushing to your remote repo, tags are NOT included by default. You will need to explicitly say that you want to push your tags to your remote repo:
-git push origin —tags
-Note: This command will push all the tags in your local machine.</description>
+      <guid>https://pi14tech.com/git/create-tag/</guid>
+      <description>GIT Create Tag To create a tag on your current branch, run this:
+ git tag &amp;lt;tagname&amp;gt;
+ This will create a local tag with the current state of the branch you are on. When pushing to your remote repo, tags are NOT included by default. You will need to explicitly say that you want to push your tags to your remote repo:
+ git push origin —tags
+   Note  This command will push all the tags in your local machine.</description>
     </item>
     
     <item>
       <title>Tag - delete</title>
-      <link>https://www.pi14tech.com/git/delete-tag/</link>
+      <link>https://pi14tech.com/git/delete-tag/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.pi14tech.com/git/delete-tag/</guid>
-      <description>GIT Delete Local/Remote TagIts quite common during a release process or a tag process, you will need to retag a specific version or remove a tag that was already pushed to remote branch.
-To remove a tag if it has been pushed to remote repository
-git push --delete origin tagname
-If you also need to delete the local tag, use:
-git tag --delete tagname
-Dissecting what happened abovePushing a branch, tag, or other ref to a remote repository involves specifying &#34;</description>
+      <guid>https://pi14tech.com/git/delete-tag/</guid>
+      <description>GIT Delete Local/Remote Tag Its quite common during a release process or a tag process, you will need to retag a specific version or remove a tag that was already pushed to remote branch.
+ To remove a tag if it has been pushed to remote repository
+ git push --delete origin tagname
+ If you also need to delete the local tag, use:
+ git tag --delete tagname
+ Dissecting what happened above Pushing a branch, tag, or other ref to a remote repository involves specifying &#34;</description>
     </item>
     
   </channel>

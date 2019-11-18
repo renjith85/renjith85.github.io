@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Asciidoc on A programmers notebook</title>
+    <link>https://pi14tech.com/asciidoc/</link>
+    <description>Recent content in Asciidoc on A programmers notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://pi14tech.com/asciidoc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://pi14tech.com/asciidoc/cheatsheet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pi14tech.com/asciidoc/cheatsheet/</guid>
+      <description> == Links
+[cols=&amp;ldquo;1a,1a&amp;rdquo;, options=&amp;ldquo;header&amp;rdquo;] |=== | ASCII Format | Rendered
+| https://asciidoctor.org - automatic! | https://asciidoctor.org - automatic!
+| https://asciidoctor.org[Asciidoctor] | https://asciidoctor.org[Asciidoctor]
+|===
+ASCII Format https://github.com/asciidoctor[Asciidoctor @ GitHub] </description>
+    </item>
+    
+  </channel>
+</rss>

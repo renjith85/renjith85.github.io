@@ -3,119 +3,200 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.pi14tech.com/</loc>
+    <loc>https://pi14tech.com/</loc>
   </url>
   
   <url>
-    <loc>https://www.pi14tech.com/git/</loc>
+    <loc>https://pi14tech.com/certificate-mgmt/</loc>
   </url>
   
   <url>
-    <loc>https://www.pi14tech.com/linux/</loc>
+    <loc>https://pi14tech.com/git/</loc>
   </url>
   
   <url>
-    <loc>https://www.pi14tech.com/site-building/</loc>
+    <loc>https://pi14tech.com/linux/</loc>
   </url>
   
   <url>
-    <loc>https://www.pi14tech.com/posts/java/java/</loc>
+    <loc>https://pi14tech.com/postman/</loc>
   </url>
   
   <url>
-    <loc>https://www.pi14tech.com/posts/linux/linux/</loc>
+    <loc>https://pi14tech.com/site-building/</loc>
   </url>
   
   <url>
-    <loc>https://www.pi14tech.com/posts/main/</loc>
+    <loc>https://pi14tech.com/asciidoc/cheatsheet/</loc>
   </url>
   
   <url>
-    <loc>https://www.pi14tech.com/posts/scp/</loc>
+    <loc>https://pi14tech.com/linux/find/</loc>
   </url>
   
   <url>
-    <loc>https://www.pi14tech.com/posts/test/</loc>
+    <loc>https://pi14tech.com/linux/input/</loc>
   </url>
   
   <url>
-    <loc>https://www.pi14tech.com/site-building/references/</loc>
+    <loc>https://pi14tech.com/postman/assertions/</loc>
   </url>
   
   <url>
-    <loc>https://www.pi14tech.com/technology/linux/linux/</loc>
+    <loc>https://pi14tech.com/postman/hmac-generator/</loc>
   </url>
   
   <url>
-    <loc>https://www.pi14tech.com/git/cheatsheet/</loc>
+    <loc>https://pi14tech.com/postman/newman/</loc>
   </url>
   
   <url>
-    <loc>https://www.pi14tech.com/git/rename-branch/</loc>
+    <loc>https://pi14tech.com/postman/postman-snippets/</loc>
   </url>
   
   <url>
-    <loc>https://www.pi14tech.com/categories/</loc>
+    <loc>https://pi14tech.com/postman/pre-request-scripts/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pi14tech.com/postman/request-manipulation/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pi14tech.com/postman/skip-request/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pi14tech.com/postman/symmetric-jwt-generator/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pi14tech.com/postman/totp-verifier/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pi14tech.com/posts/java/java/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pi14tech.com/posts/linux/linux/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pi14tech.com/posts/main/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pi14tech.com/posts/scp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pi14tech.com/posts/test/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pi14tech.com/site-building/dns/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pi14tech.com/site-building/references/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pi14tech.com/technology/linux/linux/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pi14tech.com/git/cheatsheet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pi14tech.com/asciidoc/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.pi14tech.com/git/git-cherry-pick/</loc>
+    <loc>https://pi14tech.com/git/rename-branch/</loc>
   </url>
   
   <url>
-    <loc>https://www.pi14tech.com/git/branch-create-feature-branch/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.pi14tech.com/git/delete-file/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.pi14tech.com/git/git-ignore/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.pi14tech.com/technology/java/java/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.pi14tech.com/git/git-merge/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.pi14tech.com/posts/</loc>
+    <loc>https://pi14tech.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.pi14tech.com/git/git-revert-merged-commit/</loc>
+    <loc>https://pi14tech.com/certificate-mgmt/certificate-key-matcher/</loc>
   </url>
   
   <url>
-    <loc>https://www.pi14tech.com/git/create-tag/</loc>
+    <loc>https://pi14tech.com/git/git-cherry-pick/</loc>
   </url>
   
   <url>
-    <loc>https://www.pi14tech.com/git/delete-tag/</loc>
+    <loc>https://pi14tech.com/certificate-mgmt/create-self-signed-cert/</loc>
   </url>
   
   <url>
-    <loc>https://www.pi14tech.com/tags/</loc>
+    <loc>https://pi14tech.com/git/branch-create-feature-branch/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pi14tech.com/git/delete-file/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pi14tech.com/git/git-ignore/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pi14tech.com/technology/java/java/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pi14tech.com/git/git-merge/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pi14tech.com/posts/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.pi14tech.com/technology/</loc>
+    <loc>https://pi14tech.com/certificate-mgmt/replace-keystore-certificate/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pi14tech.com/git/git-revert-merged-commit/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pi14tech.com/git/create-tag/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pi14tech.com/git/delete-tag/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pi14tech.com/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.pi14tech.com/linux/scp/</loc>
+    <loc>https://pi14tech.com/technology/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.pi14tech.com/technology/linux/scp/</loc>
+    <loc>https://pi14tech.com/postman/ci-cd/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pi14tech.com/linux/scp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pi14tech.com/technology/linux/scp/</loc>
   </url>
   
 </urlset>

@@ -2,44 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Technology on A programmers notebook</title>
-    <link>https://www.pi14tech.com/technology/</link>
+    <link>https://pi14tech.com/technology/</link>
     <description>Recent content in Technology on A programmers notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://www.pi14tech.com/technology/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://pi14tech.com/technology/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://www.pi14tech.com/technology/linux/linux/</link>
+      <link>https://pi14tech.com/technology/linux/linux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.pi14tech.com/technology/linux/linux/</guid>
-      <description>Handy techniques to deal with linux</description>
+      <guid>https://pi14tech.com/technology/linux/linux/</guid>
+      <description>Handy techniques to deal with linux
+ </description>
     </item>
     
     <item>
       <title>Generics</title>
-      <link>https://www.pi14tech.com/technology/java/java/</link>
+      <link>https://pi14tech.com/technology/java/java/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.pi14tech.com/technology/java/java/</guid>
-      <description>Handy techniques to deal with Java</description>
+      <guid>https://pi14tech.com/technology/java/java/</guid>
+      <description>Handy techniques to deal with Java
+ </description>
     </item>
     
     <item>
       <title>scp</title>
-      <link>https://www.pi14tech.com/technology/linux/scp/</link>
+      <link>https://pi14tech.com/technology/linux/scp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.pi14tech.com/technology/linux/scp/</guid>
+      <guid>https://pi14tech.com/technology/linux/scp/</guid>
       <description>Secure copy protocol(SCP) allows files to be copied between machines/servers in a secure way.
-Usage
-scp &amp;lt;source-specification&amp;gt; &amp;lt;destination-specification&amp;gt;
- Tip: Format for a resource in remote(source or destination) is: user@machine:filename
-Format for file specification on local system is : filenameWhile accessing a remote servermake sure user account exists in remote destinationmake sure filesystem has sufficient permission to be accessed by user account Examples:
-Copy a file(say &#34;sample.adoc&#34;) from local to remote system(User is in local system shell) scp sample.</description>
+ Usage
+ scp &amp;lt;source-specification&amp;gt; &amp;lt;destination-specification&amp;gt;
+     Tip   Format for a resource in remote(source or destination) is: user@machine:filename
+  Format for file specification on local system is : filename
+  While accessing a remote server
+  make sure user account exists in remote destination
+  make sure filesystem has sufficient permission to be accessed by user account</description>
     </item>
     
   </channel>

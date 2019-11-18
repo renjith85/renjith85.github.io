@@ -1,197 +1,337 @@
 [
 {
-	"uri": "https://www.pi14tech.com/",
+	"uri": "https://pi14tech.com/",
 	"title": "A programmers notebook",
 	"tags": [],
 	"description": "",
 	"content": " A programmers notebook We all learn and solve so many problems daily using various tools, techologies, languages etc. And as programmers we normally store such information in our notebooks or some files and eventually search for that information whenver we require those. Basically these act us our back up memory tapes when we want to go back and reference things which we might have used once.\nAs we are playing catch up with technology daily and with reach of global information access, it is very important that we share our learnings and findings with others. This creates a feedback loop where we consume and produce information (however small it may be), it will be useful to another programmer. We all are here to share and learn from each other. Hopefully this notebook of mine will be useful to others.\n"
 },
 {
-	"uri": "https://www.pi14tech.com/git/",
+	"uri": "https://pi14tech.com/certificate-mgmt/",
+	"title": "Certificate Management",
+	"tags": [],
+	"description": "",
+	"content": " SSL(TLS) Certificates SSL and TLS are both cryptographic protocols that provide authentication and data encryption between servers, machines and applications operating over a network (e.g. a client connecting to a web server). SSL is the predecessor to TLS.\n SSL 2.0 =\u0026gt; 1995 SSL 3.0 =\u0026gt; 1996 TLS 1.0 =\u0026gt; 1999 TLS 1.1 =\u0026gt; 2006 TLS 1.2 =\u0026gt; 2008 TLS 1.3 =\u0026gt; 2018  Certificates are not the same as protocols. Certificates are not dependent on protocols. That is, you don’t need to use a TLS Certificate vs. an SSL Certificate. While many vendors tend to use the phrase “SSL/TLS Certificate”, it may be more accurate to call them “Certificates for use with SSL and TLS\u0026rdquo;, since the protocols are determined by your server configuration, not the certificates themselves.\nIt’s likely you will continue to see certificates referred to as SSL Certificates because at this point that’s the term more people are familiar with, but we’re beginning to see increased usage of the term TLS across the industry. SSL/TLS is a common compromise until more people become familiar with TLS.\nThis chapter will provide some details around common tools and usecases for SSL/TLS certificate management in linux environments and in some application frameworks like Java\n"
+},
+{
+	"uri": "https://pi14tech.com/git/",
 	"title": "GIT",
 	"tags": [],
 	"description": "",
 	"content": " GIT GIT commands that will be handy to get through the daily developer hurdles for version management.\nGIT is a distributed version control system.Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. In this clients don’t just check out the latest snapshot of the files; rather, they fully mirror the repository, including its full history.Thus, if any server dies, and these systems were collaborating via that server, any of the client repositories can be copied back up to the server to restore it. Every clone is really a full backup of all the data.\n"
 },
 {
-	"uri": "https://www.pi14tech.com/linux/",
+	"uri": "https://pi14tech.com/linux/",
 	"title": "Linux",
 	"tags": [],
 	"description": "",
 	"content": " Linux Basic linus tips and tricks to navigate through daily programming hurdles\n"
 },
 {
-	"uri": "https://www.pi14tech.com/site-building/",
+	"uri": "https://pi14tech.com/postman/",
+	"title": "Postman",
+	"tags": [],
+	"description": "",
+	"content": " Postman Postman is a powerful REST API testing tool. I have used it quite a few times to integrate API verification into CI/CD pipelines for various project. This tool has evolved over the years and some information may be obselete, but most of the notes are pretty handy for developers.\n"
+},
+{
+	"uri": "https://pi14tech.com/site-building/",
 	"title": "Site building",
 	"tags": [],
 	"description": "",
 	"content": " Website Building In this article, I will describe various tools and techniques that I have tried to build and host this website. This was an interesting experiment on its own to utilize various open source and free technologies and learn how to host a website myself rather than using other hosted platforms like GoDaddy or Central etc. Trust me, those hosting solutions are good for people who are not programmers and want use of this but people with programming skills should definitely give this a try!\n"
 },
 {
-	"uri": "https://www.pi14tech.com/posts/java/java/",
+	"uri": "https://pi14tech.com/asciidoc/cheatsheet/",
 	"title": "",
 	"tags": [],
-	"description": "Java",
-	"content": "Handy techniques to deal with Java\n"
+	"description": "",
+	"content": " == Links\n[cols=\u0026ldquo;1a,1a\u0026rdquo;, options=\u0026ldquo;header\u0026rdquo;] |=== | ASCII Format | Rendered\n| https://asciidoctor.org - automatic! | https://asciidoctor.org - automatic!\n| https://asciidoctor.org[Asciidoctor] | https://asciidoctor.org[Asciidoctor]\n|===\nASCII Format https://github.com/asciidoctor[Asciidoctor @ GitHub] "
 },
 {
-	"uri": "https://www.pi14tech.com/posts/linux/linux/",
+	"uri": "https://pi14tech.com/linux/find/",
 	"title": "",
 	"tags": [],
-	"description": "Linux",
-	"content": "Handy techniques to deal with linux\n"
+	"description": "",
+	"content": "== Recursive list\nls -R ls -l -R\nUsing find command\nfind . -print find . -ls\nUsing du command\ndu -a . du -a /path/to/search/ | more\n== Copy without hidden folder\nrsync -a --exclude='.*' /source/ /destination\n=== Prevent deleting destination files that match a pattern\nrsync -avrc --delete --exclude somedir source destination\nrsync ... --filter 'protect /remote-directory-to-keep/' ...\nrsync ... --filter='P my-specific-logfile.log'\nexclude all log files from being transferred from the source to destination, and delete all existing ones on the destination. So I\u0026rsquo;m using \u0026ndash;exclude=*.log with \u0026ndash;delete-excluded which works great.\nrsync -az -e \u0026quot;ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no\u0026quot; \\ --delete --delete-excluded --force --exclude=.git --exclude=.bundle \\ --exclude=tmp --exclude=log/* --exclude=*.log --exclude=*.pid \\ user@host:/path/to/src/ /var/build/dest\nI want to keep a certain log file intact on the destination. I want an \u0026ndash;exclude-from-delete option.\nrsync -az -e \u0026quot;ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no\u0026quot; \\ --delete --delete-excluded --force --exclude=.git --exclude=.bundle \\ --exclude=tmp --exclude=log/* --exclude=*.log --exclude=*.pid \\ user@host:/path/to/src/ /var/build/dest\nCopy only selected files from source to destination and retain some files in destination\nrsync --delete --filter='P my-specific-logfile.log'\nhttps://stackoverflow.com/questions/19024532/prevent-rsync-from-deleting-destination-files-that-match-a-given-pattern\nhttps://superuser.com/questions/161766/how-to-exclude-rsync-excludes-from-delete\nhttps://unix.stackexchange.com/questions/76237/rsync-certain-files-excluding-the-rest-ignoring-svn-directory-recursively\nI\u0026rsquo;m using rsync to copy some files from a share to another.\nRecursively, I need to:\nDelete files at destination that were removed from the origin Only sync .php and .js files Exclude every other file type Do not delete .svn/ directories at destination\nrsync -avzC --filter='-rs_*/.svn*' --include=\u0026quot;*/\u0026quot; --include='*.js' \\ --include='*.php' --exclude=\u0026quot;*\u0026quot; --delete dir1/ dir2/\n Why does it work? The key piece to this script is to make use of the filters capability of rsync. Filters allow you to remove files from the matched set at various points in the command. So in our case we're filtering any files that match the pattern */.svn*. The modifiers -rs_ tell the filter that we want to filter on both the source side as well as the target side. excerpt from the FILTER NOTES section of rsync's man page An s is used to indicate that the rule applies to the sending side. When a rule affects the sending side, it prevents files from being transferred. The default is for a rule to affect both sides unless --delete-excluded was specified, in which case default rules become sender-side only. See also the hide (H) and show (S) rules, which are an alternate way to specify sending-side includes/excludes. An r is used to indicate that the rule applies to the receiving side. When a rule affects the receiving side, it prevents files from being deleted. See the s modifier for more info. See also the protect (P) and risk (R) rules, which are an alternate way to specify receiver-side includes/excludes. See man rsync for more details.  rsync -vaiz --delete --exclude=.svn/ --include='*.php' --include='*.js' \\ --include='*/' --exclude='*' --prune-empty-dirs \\ --filter \u0026quot;protect .svn/\u0026quot; /origin /destination\n"
 },
 {
-	"uri": "https://www.pi14tech.com/posts/main/",
+	"uri": "https://pi14tech.com/linux/input/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": " == Ask for user input in bash\n[source,json] while true; do read -p \u0026ldquo;Do you wish to continue running this?\u0026rdquo; inp case $inp in [Yy]* ) break;; [Nn]* ) exit;; * ) echo \u0026ldquo;Please answer yes or no\u0026rdquo;;; esac\ndone echo \u0026ldquo;Do you wish to install this program?\u0026rdquo; select yn in \u0026ldquo;Yes\u0026rdquo; \u0026ldquo;No\u0026rdquo;; do case $yn in Yes ) make install; break;; No ) exit;; esac\ndone echo -n \u0026ldquo;Is this a good question (y/n)? \u0026ldquo; read answer\nif [ \u0026ldquo;$answer\u0026rdquo; != \u0026ldquo;${answer#[Yy]}\u0026rdquo; ] ;then echo Yes else echo No\nfi "
+},
+{
+	"uri": "https://pi14tech.com/postman/assertions/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": " == Postman Response Assertions\nWithin postman, test assertions can be included to check the validity of the API request and response objects. Postman test assertions follows a BDD style and are based on the capabilities of the Chai Assertion Library. Read more about Chai at https://www.chaijs.com/api/bdd/\n.Assert status\n[source,json] pm.test(\u0026ldquo;Must fail with response status\u0026rdquo;, function () { pm.response.to.have.status(400);\n}); .Assert json response body element\n[source,json] pm.test(\u0026ldquo;Verify jwt issuer\u0026rdquo;, function () { var jsonData = pm.response.json(); pm.expect(jsonData.code).to.eql(\u0026ldquo;CODE-001\u0026rdquo;);\n}); .Assert absence of a json element pm.test(\u0026ldquo;Verify if users has an entitlement\u0026rdquo;, function(){ var data = pm.response.json(); pm.expect(data).to.not.have.ownPropertyDescriptor(\u0026lsquo;entitlements\u0026rsquo;);\n}) .Check if an integer data value is above a specific value pm.test(\u0026ldquo;Verify if users exists\u0026rdquo;, function(){ var data = pm.response.json(); pm.expect(data.paging.total).to.be.above(1);\n}) .Check integer equality pm.test(\u0026ldquo;Verify if users exists\u0026rdquo;, function(){ var data = pm.response.json(); pm.expect(data.paging.total).to.be.equal(0); })\n.Decode a JWT\nThere will be scenarios in which you want to check the validity of a https://tools.ietf.org/html/rfc6750[Bearer] token represented as a https://tools.ietf.org/html/rfc7519[JWT] token\nAs you would be familiar JWT tokens, it is a concatenated string of Base64 encoded representation of JWT header, payload(aka claims) and signature.We define a simple function to do a split based on JWT delimiter(.) and then pick the payload(claims) value and decode the Base64 value using https://html.spec.whatwg.org/multipage/webappapis.html#atob[atob] function in javascript. Then the structure can be parsed using a http://www.ecma-international.org/ecma-262/10.0/index.html#sec-json.parse[JSON] object parser function.\n[source,json] function jwt_decode(jwt) { var parts = jwt.split(\u0026lsquo;.\u0026rsquo;); // header, payload, signature return JSON.parse(atob(parts[1])); }\nvar data = JSON.parse(responseBody);\nvar decodedJwtClaim = jwt_decode(data.transactionJwt)\nconsole.log(\u0026ldquo;Extract txnId from jwtclaim + \u0026ldquo;, decodedJwt.content.txnId) .Set extracted value in environment variable\n[source.json] var data = JSON.parse(responseBody); postman.setEnvironmentVariable(\u0026ldquo;userUuid\u0026rdquo;, data.uuid);\npm.environment.set(\u0026ldquo;txnId\u0026rdquo;, data.content.txnId) More reference is available at https://learning.getpostman.com/docs/postman/scripts/test-examples/[Postman] official site\nSkip Request based on\n//loop for x times the same test\nrandomCounter = parseInt(randomCounter) + 1\npostman.setGlobalVariable(\u0026lsquo;lockOutCount\u0026rsquo;, randomCounter); console.log(randomCounter)\nif( randomCounter \u0026lt; 6) { console.log(\u0026ldquo;rerunning flow\u0026rdquo;); console.log(postman.getGlobalVariable(\u0026lsquo;lockOutCount\u0026rsquo;)); postman.setNextRequest(\u0026ldquo;AuthN -Password authentication - wrong password#1\u0026rdquo;); } else { postman.setGlobalVariable(\u0026lsquo;lockOutCount\u0026rsquo;, 0);\n} "
+},
+{
+	"uri": "https://pi14tech.com/postman/hmac-generator/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": " == HMAC Generator Snippet\nThis is a sample code snippet for HMAC generation. In case you want to call an API that is protected using HMAC, below snippet can be used to do the same. Few HMAC providers might have slightly different algorithms, so please make sure the one you are using matches the outline below.\n[source,json] var hmacApplicationUuid = postman.getEnvironmentVariable(\u0026ldquo;hmacApplicationUuid\u0026rdquo;) console.log(hmacApplicationUuid) var hmacSecretKey = postman.getEnvironmentVariable(\u0026ldquo;hmacApplicationKey\u0026rdquo;) console.log(hmacSecretKey)\nvar targerApiUrl = request.url.replace(/{{(\\w*)}}/g,function(str,key) { return postman.getEnvironmentVariable(key) });\nconsole.log(targerApiUrl)\nvar targerApiHttpVerb = request.method console.log(targerApiHttpVerb) var targerApiRequestBody = request.data\nvar canonicalizedUriNoProtocol = targerApiUrl.replace(/^https?:\\/\\//i, \u0026ldquo;\u0026rdquo;); var targetApiRequestBodyMd5Hash = CryptoJS.MD5(targerApiRequestBody) var now = new Date();\nfunction getFormattedString(now) { var d = now.toString() day = d.substring(0,3) date = d.substring(8,10) month = d.substring(4,7) year = d.substring(11,15) time = d.substring(16,24) zone = d.substring(28,33) fds = day + \u0026ldquo;, \u0026rdquo; + date + \u0026ldquo; \u0026rdquo; + month + \u0026ldquo; \u0026rdquo; + year + \u0026ldquo; \u0026rdquo; + time + \u0026ldquo; \u0026rdquo; + zone return fds; }\nvar formattedCurrentTimeStamp = getFormattedString(now); console.log(\u0026ldquo;formattedCurrentTimeStamp\u0026rdquo; , formattedCurrentTimeStamp)\n//var formattedCurrentTimeStamp = d.format(\u0026lsquo;ddd, D MMM YYYY HH:mm:ss ZZ\u0026rsquo;) var contentToSign = targerApiHttpVerb + \u0026ldquo;\\n\u0026rdquo; + targetApiRequestBodyMd5Hash + \u0026ldquo;\\n\u0026rdquo; + formattedCurrentTimeStamp + \u0026ldquo;\\n\u0026rdquo; + canonicalizedUriNoProtocol + \u0026ldquo;\\n\u0026rdquo; var encodedContentToSign = CryptoJS.enc.Utf8.parse(contentToSign)\nvar sha256SignedContent = CryptoJS.HmacSHA256(encodedContentToSign, hmacSecretKey) var base64EncodedSignedContent = CryptoJS.enc.Base64.stringify(sha256SignedContent)\nvar authorizationheader = \u0026ldquo;orchis-hmac\u0026rdquo; + \u0026ldquo; \u0026rdquo; + hmacApplicationUuid + \u0026ldquo;:\u0026rdquo; + base64EncodedSignedContent + \u0026ldquo;:\u0026rdquo; + \u0026ldquo;internal-applications\u0026rdquo;; var base64OfEncodedRequest = CryptoJS.enc.Base64.stringify(encodedContentToSign)\nconsole.log(\u0026ldquo;x-authorization:\u0026rdquo; , authorizationheader) console.log(\u0026ldquo;x-request :\u0026rdquo; , base64OfEncodedRequest) console.log(\u0026ldquo;x-date :\u0026rdquo; , formattedCurrentTimeStamp)\npostman.setEnvironmentVariable(\u0026lsquo;x-authorization\u0026rsquo;,authorizationheader) postman.setEnvironmentVariable(\u0026lsquo;x-request\u0026rsquo;,base64OfEncodedRequest) postman.setEnvironmentVariable(\u0026lsquo;x-date\u0026rsquo;,formattedCurrentTimeStamp)\n"
+},
+{
+	"uri": "https://pi14tech.com/postman/newman/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": " == Newman\nNewman is the commandline equivalent of postman gui\n[source,json] sudo npm install -g newman;\ncd postman-snippets;\n./run_workflows.sh json envs/env.postman_environment.json Iterate through your postman scripts #!/usr/bin/env bash ENVIRONMENT=envs/env.postman_environment.json REPORT_TYPE=html FLIP_POLICIES_BACK_TO_CORE=false\nif [ -n \u0026ldquo;$1\u0026rdquo; ]; then REPORT_TYPE=$1 fi\nif [ -n \u0026ldquo;$2\u0026rdquo; ]; then ENVIRONMENT=$2 fi\nif [ -d reports ]; then rm -r reports fi\nmkdir -p reports rm reports/postman.log 2\u0026gt; /dev/null\nfor file in workflow-collections/*.json; do WORKFLOW=$(echo $file | sed -e \u0026ldquo;s/^workflow-collections\\//report-/\u0026rdquo; -e \u0026ldquo;s/.json//\u0026rdquo;) echo \u0026ldquo;Executing Identityt $WORKFLOW\u0026rdquo; newman run $file -e $ENVIRONMENT \u0026ndash;insecure \u0026ndash;bail \u0026ndash;reporters cli,$REPORT_TYPE \u0026ndash;reporter-$REPORT_TYPE-export reports/$WORKFLOW.$REPORT_TYPE | tee -a reports/postman.log retVal=$? if [ ! $retVal -eq 0 ]; then echo \u0026ldquo;Error on $file\u0026rdquo; #exit $retVal fi\ndone "
+},
+{
+	"uri": "https://pi14tech.com/postman/postman-snippets/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "== Postman Snippets\ninclude::loop-request.adoc include::skip-request.adoc include::hmac-generator.adoc include::topt-verifier.adoc include::symmetric-jwt-generator.adoc\n"
+},
+{
+	"uri": "https://pi14tech.com/postman/pre-request-scripts/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": " == Pre request\n.Set a random counter\n[source,json] var randomCounter = Math.floor(Math.random() * 1000); postman.setGlobalVariable(\u0026lsquo;userEmailCounter\u0026rsquo;, randomCounter); postman.setEnvironmentVariable(\u0026ldquo;userPassword\u0026rdquo;,\u0026ldquo;P@ssw0rd!\u0026rdquo;)\nconsole.log(randomCounter) .Assert json response body\n[source,json] pm.test(\u0026ldquo;Verify jwt issuer\u0026rdquo;, function () { var jsonData = pm.response.json(); pm.expect(jsonData.code).to.eql(\u0026ldquo;ASMS-001\u0026rdquo;);\n}); .Decode JWT\n[source,json] pm.test(\u0026ldquo;Verify it has response body\u0026rdquo;, function () { var jsonData = pm.response.json(); // pm.expect(jsonData.code).to.eql(\u0026ldquo;ASMS-001\u0026rdquo;); });\nfunction jwt_decode(jwt) { var parts = jwt.split(\u0026lsquo;.\u0026rsquo;); // header, payload, signature return JSON.parse(atob(parts[1])); }\nvar data = JSON.parse(responseBody);\nvar decodedJwt = jwt_decode(data.transactionJwt)\npm.environment.set(\u0026ldquo;transactionJwt\u0026rdquo;, data.transactionJwt) pm.environment.set(\u0026ldquo;txnId\u0026rdquo;, decodedJwt.content.txnId)\npm.environment.set(\u0026ldquo;txnApp\u0026rdquo;, decodedJwt.content.txnApp) [source,json] var data = JSON.parse(responseBody); postman.setEnvironmentVariable(\u0026ldquo;userUuid\u0026rdquo;, data.uuid);\n//assertions tests[\u0026ldquo;API succeeded\u0026rdquo;] = responseCode.code === 201;\ntests[\u0026ldquo;uuid available in response\u0026rdquo;] = data.uuid !== null; [source,json] [source,json] var data = JSON.parse(responseBody); postman.setEnvironmentVariable(\u0026ldquo;userUuid\u0026rdquo;, data.uuid);\n//assertions tests[\u0026ldquo;API succeeded\u0026rdquo;] = responseCode.code === 201;\ntests[\u0026ldquo;uuid available in response\u0026rdquo;] = data.uuid !== null; "
+},
+{
+	"uri": "https://pi14tech.com/postman/request-manipulation/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": " == Loop\nvar randomCounter = postman.getGlobalVariable(\u0026lsquo;lockOutCount\u0026rsquo;); console.log(randomCounter)\n//assertions tests[\u0026ldquo;API expected to fail with\u0026rdquo;] = responseCode.code === 401;\nvar data = JSON.parse(responseBody);\nif(randomCounter \u0026lt; 5) { tests[\u0026ldquo;Fail with invalid creds\u0026rdquo;] = data.code === \u0026ldquo;Authentication.InvalidCredentials\u0026rdquo;; } else { tests[\u0026ldquo;Fail with unauthenticated\u0026rdquo;] = data.code === \u0026ldquo;Authentication.Unauthenticated\u0026rdquo;; tests[\u0026ldquo;Check if preferred recovery is Call HelpDesk\u0026rdquo;] = data.details.recovery[0].id === \u0026ldquo;CallHelpDesk\u0026rdquo;; tests[\u0026ldquo;Check if preferred recovery type is AuthN\u0026rdquo;] = data.details.recovery[0].type === \u0026ldquo;AuthN\u0026rdquo;; }\n//loop for x times the same test\nrandomCounter = parseInt(randomCounter) + 1\npostman.setGlobalVariable(\u0026lsquo;lockOutCount\u0026rsquo;, randomCounter); console.log(randomCounter)\nif( randomCounter \u0026lt; 6) { console.log(\u0026ldquo;rerunning flow\u0026rdquo;); console.log(postman.getGlobalVariable(\u0026lsquo;lockOutCount\u0026rsquo;)); postman.setNextRequest(\u0026ldquo;AuthN -Password authentication - wrong password#1\u0026rdquo;); } else { postman.setGlobalVariable(\u0026lsquo;lockOutCount\u0026rsquo;, 0); }\n//to ensure account is locked out "
+},
+{
+	"uri": "https://pi14tech.com/postman/skip-request/",
 	"title": "",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://www.pi14tech.com/posts/scp/",
+	"uri": "https://pi14tech.com/postman/symmetric-jwt-generator/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": " == JWT Generator\n[source,json] function base64url(source) { // Encode in classical base64 encodedSource = CryptoJS.enc.Base64.stringify(source);\n// Remove padding equal characters encodedSource = encodedSource.replace(/=+$/, \u0026ldquo;);\n// Replace characters according to base64url specifications encodedSource = encodedSource.replace(/+/g, \u0026lsquo;-\u0026rsquo;); encodedSource = encodedSource.replace(/\\//g, \u0026lsquo;_\u0026lsquo;);\nreturn encodedSource; }\n// Generate JWT\nvar header = { \u0026ldquo;alg\u0026rdquo;: \u0026ldquo;HS256\u0026rdquo;, \u0026ldquo;typ\u0026rdquo;: \u0026ldquo;JWT\u0026rdquo; };\nvar stringifiedHeader = CryptoJS.enc.Utf8.parse(JSON.stringify(header)); var encodedHeader = base64url(stringifiedHeader);\n//TODO: Feed in a dummy payload for the JWT var data = { \u0026ldquo;content\u0026rdquo; : { \u0026ldquo;key1\u0026rdquo;: \u0026ldquo;value1\u0026rdquo; } };\nvar stringifiedData = CryptoJS.enc.Utf8.parse(JSON.stringify(data)); var encodedData = base64url(stringifiedData);\nvar token = encodedHeader + \u0026ldquo;.\u0026rdquo; + encodedData;\nvar secret = postman.getEnvironmentVariable(\u0026ldquo;jwtSecret\u0026rdquo;);\nvar signature = CryptoJS.HmacSHA256(token, secret); signature = base64url(signature);\nvar signedToken = token + \u0026ldquo;.\u0026rdquo; + signature;\npostman.setEnvironmentVariable(\u0026ldquo;signedJwt\u0026rdquo;, signedToken) "
+},
+{
+	"uri": "https://pi14tech.com/postman/totp-verifier/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": " == TOTP verifier\n.TOTP Sessi updateOtp()\nfunction dec2hex(s) { return (s \u0026lt; 15.5 ? \u0026lsquo;0\u0026rsquo; : \u0026ldquo;) + Math.round(s).toString(16); } function hex2dec(s) { return parseInt(s, 16); }\nfunction base32tohex(base32) { var base32chars = \u0026quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ234567\u0026quot;; var bits = \u0026quot;\u0026quot;; var hex = \u0026quot;\u0026quot;; for (var i = 0; i \u0026lt; base32.length; i++) { var val = base32chars.indexOf(base32.charAt(i).toUpperCase()); bits += leftpad(val.toString(2), 5, '0'); } for (var j = 0; j+4 \u0026lt;= bits.length;j+=4) { var chunk = bits.substr(j, 4); hex = hex + parseInt(chunk, 2).toString(16) ; } return hex; } function leftpad(str, len, pad) { if (len + 1 \u0026gt;= str.length) { str = Array(len + 1 - str.length).join(pad) + str; } return str; } function updateOtp() { var googleAuthSecret = postman.getEnvironmentVariable(\u0026quot;googleAuthSecret\u0026quot;); console.log(\u0026quot;googleAuthSecret\u0026quot;, googleAuthSecret); var key = base32tohex(googleAuthSecret); console.log(\u0026quot;secretHex\u0026quot;, key); var epoch = Math.round(new Date().getTime() / 1000.0); var time = leftpad(dec2hex(Math.floor(epoch / 30)), 16, '0'); console.log(\u0026quot;epoch\u0026quot;, epoch); console.log(\u0026quot;time\u0026quot;, time); //try using this approach for feeding in wordArray itno cyrpt hash function var keyWords = CryptoJS.enc.Hex.parse(key); var timeWords = CryptoJS.enc.Hex.parse(time); var sha1TotpHmac = CryptoJS.HmacSHA1(timeWords, keyWords); console.log(\u0026quot;sha1TotpHmac\u0026quot;, sha1TotpHmac); var hmac = CryptoJS.enc.Hex.stringify(sha1TotpHmac) console.log(\u0026quot;hmac\u0026quot;, hmac); var offset = hex2dec(hmac.substring(hmac.length - 1)); var part1 = hmac.substr(0, offset * 2); var part2 = hmac.substr(offset * 2, 8); var part3 = hmac.substr(offset * 2 + 8, hmac.length - offset); var otp = (hex2dec(hmac.substr(offset * 2, 8)) \u0026amp; hex2dec('7fffffff')) + ''; otp = (otp).substr(otp.length - 6, 6); postman.setEnvironmentVariable(\u0026quot;googleTotp\u0026quot;, otp) }  "
+},
+{
+	"uri": "https://pi14tech.com/posts/java/java/",
+	"title": "",
+	"tags": [],
+	"description": "Java",
+	"content": "Handy techniques to deal with Java\n "
+},
+{
+	"uri": "https://pi14tech.com/posts/linux/linux/",
+	"title": "",
+	"tags": [],
+	"description": "Linux",
+	"content": "Handy techniques to deal with linux\n "
+},
+{
+	"uri": "https://pi14tech.com/posts/main/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://pi14tech.com/posts/scp/",
 	"title": "",
 	"tags": [],
 	"description": "Testttttt",
-	"content": "Secure copy protocol(SCP) allows files to be copied between machines/servers in a secure way.\nUsage\nscp \u0026lt;source-specification\u0026gt; \u0026lt;destination-specification\u0026gt;\n Tip: Format for a resource in remote(source or destination) is: user@machine:filename\nFormat for file specification on local system is : filenameWhile accessing a remote servermake sure user account exists in remote destinationmake sure filesystem has sufficient permission to be accessed by user account Examples:\nCopy a file(say \"sample.adoc\") from local to remote system(User is in local system shell) scp sample.adoc remote-user@\u0026lt;machine-ip\u0026gt;:file-location\n Copy a file(say \"sample.adoc\") from remote system onto local system current folder(User is in local system shell) scp remote-user@\u0026lt;machine-ip\u0026gt;:\u0026lt;absolute-location-of-sample.adoc\u0026gt; .\n Copy a remote system file onto local system tmp folder(User is in local system shell) scp remote-user@\u0026lt;machine-ip\u0026gt;:\u0026lt;location-of-remote-file\u0026gt; /tmp\n SCP using ssh keyIn most of the scenarios, you will be required to use a certificate(.pub or .pem or ssh) key to access the underlying servers.\nscp -i \u0026lt;identity-file\u0026gt; \u0026lt;source-specification\u0026gt; \u0026lt;destination-specification\u0026gt;\n Important: Make sure your identity file has only limited permission(chmod 400 \u0026lt;identity-file\u0026gt;, if not some servers will complain the access key is too open\n "
+	"content": "Secure copy protocol(SCP) allows files to be copied between machines/servers in a secure way.\n Usage\n scp \u0026lt;source-specification\u0026gt; \u0026lt;destination-specification\u0026gt;\n     Tip   Format for a resource in remote(source or destination) is: user@machine:filename\n  Format for file specification on local system is : filename\n  While accessing a remote server\n  make sure user account exists in remote destination\n  make sure filesystem has sufficient permission to be accessed by user account\n          Examples:\n   Copy a file(say \"sample.adoc\") from local to remote system(User is in local system shell)\n   scp sample.adoc remote-user@\u0026lt;machine-ip\u0026gt;:file-location\n     Copy a file(say \"sample.adoc\") from remote system onto local system current folder(User is in local system shell)\n   scp remote-user@\u0026lt;machine-ip\u0026gt;:\u0026lt;absolute-location-of-sample.adoc\u0026gt; .\n     Copy a remote system file onto local system tmp folder(User is in local system shell)\n   scp remote-user@\u0026lt;machine-ip\u0026gt;:\u0026lt;location-of-remote-file\u0026gt; /tmp\n     SCP using ssh key In most of the scenarios, you will be required to use a certificate(.pub or .pem or ssh) key to access the underlying servers.\n scp -i \u0026lt;identity-file\u0026gt; \u0026lt;source-specification\u0026gt; \u0026lt;destination-specification\u0026gt;\n     Important  Make sure your identity file has only limited permission(chmod 400 \u0026lt;identity-file\u0026gt;, if not some servers will complain the access key is too open       "
 },
 {
-	"uri": "https://www.pi14tech.com/posts/test/",
+	"uri": "https://pi14tech.com/posts/test/",
 	"title": "",
 	"tags": [],
 	"description": "",
 	"content": " A Fast and Flexible Static Site Generator built with love by spf13 and friends in Go.\nWebsite | Forum | Chat | Documentation | Installation Guide | Twitter\n   \nOverview Hugo is a static site generator written in Go. It is optimized for speed, easy use and configurability. Hugo takes a directory with content and templates and renders them into a full HTML website.\nHugo relies on Markdown files with front matter for meta data. And you can run Hugo from any directory. This works well for shared hosts and other systems where you don’t have a privileged account.\nHugo renders a typical website of moderate size in a fraction of a second. A good rule of thumb is that each piece of content renders in around 1 millisecond.\nHugo is meant to work well for any kind of website including blogs, tumbles and docs.\nSupported Architectures Currently, we provide pre-built Hugo binaries for Windows, Linux, FreeBSD, NetBSD and OS\u0026nbsp;X (Darwin) for x64, i386 and ARM architectures.\nHugo may also be compiled from source wherever the Go compiler tool chain can run, e.g. for other operating systems including DragonFly BSD, OpenBSD, Plan\u0026nbsp;9 and Solaris.\nComplete documentation is available at Hugo Documentation.\nChoose How to Install If you want to use Hugo as your site generator, simply install the Hugo binaries. The Hugo binaries have no external dependencies.\nTo contribute to the Hugo source code or documentation, you should fork the Hugo GitHub project and clone it to your local machine.\nFinally, you can install the Hugo source code with go, build the binaries yourself, and run Hugo that way. Building the binaries is an easy task for an experienced go getter.\nInstall Hugo as Your Site Generator (Binary Install) Use the installation instructions in the Hugo documentation.\nClone the Hugo Project (Contributor)  Make sure your local environment has the following software installed:\n Git Mercurial Go 1.3+ (Go 1.4+ on Windows, see Go Issue #8090)  Fork the Hugo project on GitHub.\n Clone your fork:\ngit clone https://github.com/YOURNAME/hugo  Change into the hugo directory:\ncd hugo  Install the Hugo project’s package dependencies:\ngo get -u -v github.com/spf13/hugo  Use a symbolic link to add your locally cloned Hugo repository to your $GOPATH, assuming you prefer doing development work outside of $GOPATH:\nrm -rf \u0026quot;$GOPATH/src/github.com/spf13/hugo\u0026quot; ln -s `pwd` \u0026quot;$GOPATH/src/github.com/spf13/hugo\u0026quot;  Go expects all of your libraries to be found in$GOPATH.\n  Build and Install the Binaries from Source (Advanced Install) Add Hugo and its package dependencies to your go src directory.\ngo get -v github.com/spf13/hugo  Once the get completes, you should find your new hugo (or hugo.exe) executable sitting inside $GOPATH/bin/.\nTo update Hugo’s dependencies, use go get with the -u option.\ngo get -u -v github.com/spf13/hugo  Contributing to Hugo We welcome contributions to Hugo of any kind including documentation, themes, organization, tutorials, blog posts, bug reports, issues, feature requests, feature implementation, pull requests, answering questions on the forum, helping to manage issues, etc. The Hugo community and maintainers are very active and helpful and the project benefits greatly from this activity.\n\nIf you have any questions about how to contribute or what to contribute please ask on the forum\nCode Contribution Guideline We welcome your contributions. To make the process as seamless as possible, we ask for the following:\n Go ahead and fork the project and make your changes. We encourage pull requests to discuss code changes. When you’re ready to create a pull request, be sure to:  Have test cases for the new code. If you have questions about how to do it, please ask in your pull request. Run go fmt Squash your commits into a single commit. git rebase -i. It’s okay to force update your pull request. This blog article is a good resource for learning how to write good commit messages, the most important part being that each commit message should have a title/subject in imperative mode without trailing period: \u0026ldquo;Return error on wrong use of the Paginator\u0026rdquo;, NOT \u0026ldquo;Returning some error.\u0026rdquo; Also, if your commit references one or more GitHub issues, always end your commit message body with See #1234 or Fixes #1234. Replace 1234 with the GitHub issue ID. The last example will close the issue when the commit is merged into master. Make sure go test ./... passes, and go build completes. Our Travis CI loop (Linux) and AppVeyor (Windows) will catch most things that are missing.   Building Hugo with Your Changes cd /path/to/hugo go build -o hugo main.go mv hugo /usr/local/bin/  Adding compile information to Hugo When Hugo is built using the above steps, the version sub-command will include the mdate of the Hugo executable, similar to the following:\nHugo Static Site Generator v0.13-DEV buildDate: 2014-12-24T04:46:03-07:00  Instead, it is possible to have the version sub-command return information about the git commit used and time of compilation using build flags.\nTo do this, replace the go build command with the following (replace /path/to/hugo with the actual path):\ngo build -ldflags \u0026quot;-X /path/to/hugo/hugolib.CommitHash `git rev-parse --short HEAD 2\u0026gt;/dev/null` -X github.com/spf13/hugo/hugolib.BuildDate `date +%FT%T%z`\u0026quot;  This will result in hugo version output that looks similar to:\nHugo Static Site Generator v0.13-DEV-8042E77 buildDate: 2014-12-25T03:25:57-07:00  Alternatively, just run make \u0026mdash; all the “magic” above is already in the Makefile. :wink:\nRunning Hugo cd /path/to/hugo go install github.com/spf13/hugo/hugolib go run main.go  Complete documentation is available at Hugo Documentation.\n \n"
 },
 {
-	"uri": "https://www.pi14tech.com/site-building/references/",
+	"uri": "https://pi14tech.com/site-building/dns/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "  Purchase domain for godaddy\n Host site in github\n Configure go daddy domain to git hub page\n  f the domain has been forwarded or automatically connected this would need to be removed if you\u0026rsquo;re going to edit the DNS manually. Here is an article on the connection wizard, if anything is on in there make sure to turn it off.\nhttps://www.godaddy.com/help/forward-a-domain-12123\nA record-\nHost: @\nPoints to: [IP address from below]\nYou can create multiple A records, one for each address.\n185.199.108.153 185.199.109.153 185.199.110.153 185.199.111.153 CNAME record-\nHost: www\nPoints to: [your-username].github.io\nMake sure these are the only A records with host @, and only record for host www. https://www.godaddy.com/community/Managing-Domains/Custom-Domains-with-GitHub-Pages/td-p/133187\n Enable https on site  https://help.github.com/en/github/working-with-github-pages/securing-your-github-pages-site-with-https\nGo to sslforfree\nhttps://www.sslforfree.com\nEnter your domain like pi14tech.com, www.pi14tech.com\nNow got to godaddy DOmain page and add TXT records with specified value. Adjust the TTL to custom value, 600s was the minimum I could get it down to\nhttps://community.letsencrypt.org/t/dns-problem-nxdomain-looking-up-txt/83481\nhttps://check-your-website.server-daten.de/?q=pi14tech.com\n"
+},
+{
+	"uri": "https://pi14tech.com/site-building/references/",
 	"title": "",
 	"tags": [],
 	"description": "",
 	"content": "== References\nhttps://axdlog.com/2018/using-hugo-and-travis-ci-to-deploy-blog-to-github-pages-automatically/\nhttps://github.com/matcornic/hugo-theme-learn\nhttps://discourse.gohugo.io/t/public-folder-and-its-content-not-generated/10535\n"
 },
 {
-	"uri": "https://www.pi14tech.com/technology/linux/linux/",
+	"uri": "https://pi14tech.com/technology/linux/linux/",
 	"title": "",
 	"tags": [],
 	"description": "Linux",
-	"content": "Handy techniques to deal with linux\n"
+	"content": "Handy techniques to deal with linux\n "
 },
 {
-	"uri": "https://www.pi14tech.com/git/cheatsheet/",
+	"uri": "https://pi14tech.com/git/cheatsheet/",
 	"title": "1. Cheatsheet",
 	"tags": [],
 	"description": "",
-	"content": "Table 1. Configuration Command\nUsagegit config --list\nSee all the global variables that has been setgit config --global user.name \"John D\"\nUsed to track who has made changes to files in local systemgit config --global user.email johndoe@e.com\nUsed to track who has made changes to files in local systemgit config --global core.editor vm\nto set a default editor for git to use while prompting for committing messages Revert Changes git reset HEAD~Discard local commit. Changes will remain in localgit revert 8f937c6 -m 1Git revert a merged commit .\ngit reset HEAD~Discard local commit. Changes will remain in localgit revert 8f937c6 -m 1 git revert 8f937c6 -m 2Git revert a merged commit "
+	"content": "Table 1. Configuration     Command\n Usage\n   git config --list\n See all the global variables that has been set\n   git config --global user.name \"John D\"\n Used to track who has made changes to files in local system\n   git config --global user.email johndoe@e.com\n Used to track who has made changes to files in local system\n   git config --global core.editor vm\n to set a default editor for git to use while prompting for committing messages\n     Revert Changes\n       git reset HEAD~\n Discard local commit. Changes will remain in local\n   git revert 8f937c6 -m 1\n Git revert a merged commit\n    .\n     git reset HEAD~\n Discard local commit. Changes will remain in local\n   git revert 8f937c6 -m 1 git revert 8f937c6 -m 2\n Git revert a merged commit\n    "
 },
 {
-	"uri": "https://www.pi14tech.com/git/rename-branch/",
+	"uri": "https://pi14tech.com/asciidoc/",
+	"title": "Asciidoc",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://pi14tech.com/git/rename-branch/",
 	"title": "Branch - rename",
 	"tags": [],
 	"description": "",
-	"content": "GIT Rename branchIt\u0026#8217;s quite common we start using a temporary name for a feature branch we are working on, and we have to rename the branch to something more meaningful as our work progresses.\nIn case, the git branch is still in local and has not been pushed to remote, below command can be used to rename the branch locally\nRename branch locally git branch -m old_branch new_branch\nIn case, the branch was pushed to remote and you want to rename the remote branch as well\nDelete old branch git push origin :old_branch\nPush the new branch, set local branch to track the new remote git push --set-upstream origin new_branch\n "
+	"content": "GIT Rename branch It\u0026#8217;s quite common we start using a temporary name for a feature branch we are working on, and we have to rename the branch to something more meaningful as our work progresses.\n In case, the git branch is still in local and has not been pushed to remote, below command can be used to rename the branch locally\n   Rename branch locally\n   git branch -m old_branch new_branch\n In case, the branch was pushed to remote and you want to rename the remote branch as well\n   Delete old branch\n   git push origin :old_branch\n   Push the new branch, set local branch to track the new remote\n   git push --set-upstream origin new_branch\n   "
 },
 {
-	"uri": "https://www.pi14tech.com/categories/",
+	"uri": "https://pi14tech.com/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://www.pi14tech.com/git/git-cherry-pick/",
+	"uri": "https://pi14tech.com/certificate-mgmt/certificate-key-matcher/",
+	"title": "Certificate Key Matcher",
+	"tags": [],
+	"description": "",
+	"content": "When you are dealing with lots of different certificates it can be easy to lose track of which certificate goes with which private key or which CSR was used to generate which certificate.\n The Certificate Key Matcher simply compares an md5 hash of the private key modulus, the certificate modulus, or the CSR modulus and tells you whether they match or not. You can check whether a certificate matches private key, or a CSR matches a certificate on your own computer by using the OpenSSL commands below:\n openssl x509 -noout -modulus -in certificate.crt | openssl md5\n openssl rsa -noout -modulus -in privateKey.key | openssl md5\n openssl req -noout -modulus -in CSR.csr | openssl md5\n "
+},
+{
+	"uri": "https://pi14tech.com/git/git-cherry-pick/",
 	"title": "Cherry pick",
 	"tags": [],
 	"description": "",
-	"content": "GIT cherry pickCherry picking in git means to choose a commit from one branch and apply it onto another. This is in contrast with other ways such as merge and rebase which normally applies many commits onto a another branch.\nHow to cherry pick?\nMake sure you are on the branch you want apply the commit to.\n`git checkout master`Cherry pick a specific commit feature you need from list of commits\n`git cherry-pick \u0026lt;commit-hash\u0026gt;` "
+	"content": "GIT cherry pick Cherry picking in git means to choose a commit from one branch and apply it onto another. This is in contrast with other ways such as merge and rebase which normally applies many commits onto a another branch.\n How to cherry pick?\n   Make sure you are on the branch you want apply the commit to.\n`git checkout master`     Cherry pick a specific commit feature you need from list of commits\n`git cherry-pick \u0026lt;commit-hash\u0026gt;`        "
 },
 {
-	"uri": "https://www.pi14tech.com/git/branch-create-feature-branch/",
+	"uri": "https://pi14tech.com/certificate-mgmt/create-self-signed-cert/",
+	"title": "Create self signed certificate",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://pi14tech.com/git/branch-create-feature-branch/",
 	"title": "GIT - Create feature branch",
 	"tags": [],
 	"description": "",
-	"content": "I am currently on dev and want to switch to a particular branch\ngit status\ngit checkout -b feature/my-new-feature-branch-name\n"
+	"content": "I am currently on dev and want to switch to a particular branch\n git status\n git checkout -b feature/my-new-feature-branch-name\n "
 },
 {
-	"uri": "https://www.pi14tech.com/git/delete-file/",
+	"uri": "https://pi14tech.com/git/delete-file/",
 	"title": "GIT - Delete file",
 	"tags": [],
 	"description": "",
-	"content": "Its pretty common that you want to remove a file that has already been commited to a remote repository. There are couple of options\nrm \u0026lt;file-name\u0026gt; git add \u0026lt;file-name\u0026gt;\nOR do `git rm \u0026lt;file-name\u0026gt;\nEssentially git rm is combination of first 2 commands.\ngit rm --cached will remove the file from the index (staging it for deletion on the next commit), but keep your copy in the local file system\nIf you want to remove a directory\ngit rm --cached -r mydirectory\n"
+	"content": "Its pretty common that you want to remove a file that has already been commited to a remote repository. There are couple of options\n rm \u0026lt;file-name\u0026gt; git add \u0026lt;file-name\u0026gt;\n OR do `git rm \u0026lt;file-name\u0026gt;\n Essentially git rm is combination of first 2 commands.\n git rm --cached will remove the file from the index (staging it for deletion on the next commit), but keep your copy in the local file system\n If you want to remove a directory\n git rm --cached -r mydirectory\n "
 },
 {
-	"uri": "https://www.pi14tech.com/git/git-ignore/",
+	"uri": "https://pi14tech.com/git/git-ignore/",
 	"title": "GIT - Ignore",
 	"tags": [],
 	"description": "",
-	"content": "Its pretty common that you have some temp files or output or generated or target folders/files that you do not want to commit to remote version control system. Such files can be added onto a .gitignore file in the root of the source project. Sample entries for a gitignore file is\n[source.rb] .project .classpath /.settings/ .settings* /target/ *.iml *.versionsBackup /.idea/ "
+	"content": "Its pretty common that you have some temp files or output or generated or target folders/files that you do not want to commit to remote version control system. Such files can be added onto a .gitignore file in the root of the source project. Sample entries for a gitignore file is\n [source.rb] .project .classpath /.settings/ .settings* /target/ *.iml *.versionsBackup /.idea/   "
 },
 {
-	"uri": "https://www.pi14tech.com/technology/java/java/",
+	"uri": "https://pi14tech.com/technology/java/java/",
 	"title": "Generics",
 	"tags": [],
 	"description": "Java",
-	"content": "Handy techniques to deal with Java\n"
+	"content": "Handy techniques to deal with Java\n "
 },
 {
-	"uri": "https://www.pi14tech.com/git/git-merge/",
+	"uri": "https://pi14tech.com/git/git-merge/",
 	"title": "Merge",
 	"tags": [],
 	"description": "",
-	"content": "GIT MergeMerge bugfix/feature onto master/devSay your bug fix branch is called bugfix and you want to merge it into master:\ngit checkout master\ngit merge --squash bugfix\ngit commit\nThis will take all the commits from the bugfix branch, squash them into 1 commit and then merge it with your master branch.\nIn case you think there are possible merge conflicts that can occur between master and bugfix but you know that bugfix branch has the correct changes\ngit merge --squash bugfix -X theirs\n-X is --strategy-option It means to accept the incoming version as compared to the current git branch I am on\n Keeping feature branch upto date with devIt\u0026#8217;s quite common that you start working on branch off a dev or master remote branch and there has been quite a lot of new commits on those branches. You will mostly need to merge those changes back into your working branch to ensure your functionality still works with all new commits before you can raise a pull request for review etc.\nTo keep feature branch in sync with dev (this would ensure local codebase has all updates f rom dev all the time)\ngit checkout dev git pull git checkout feature/xx-my-feature-branch git merge dev\n "
+	"content": "GIT Merge Merge bugfix/feature onto master/dev Say your bug fix branch is called bugfix and you want to merge it into master:\n git checkout master\n git merge --squash bugfix\n git commit\n This will take all the commits from the bugfix branch, squash them into 1 commit and then merge it with your master branch.\n In case you think there are possible merge conflicts that can occur between master and bugfix but you know that bugfix branch has the correct changes\n git merge --squash bugfix -X theirs\n -X is --strategy-option It means to accept the incoming version as compared to the current git branch I am on\n  Keeping feature branch upto date with dev It\u0026#8217;s quite common that you start working on branch off a dev or master remote branch and there has been quite a lot of new commits on those branches. You will mostly need to merge those changes back into your working branch to ensure your functionality still works with all new commits before you can raise a pull request for review etc.\n To keep feature branch in sync with dev (this would ensure local codebase has all updates f rom dev all the time)\n git checkout dev git pull git checkout feature/xx-my-feature-branch git merge dev\n    "
 },
 {
-	"uri": "https://www.pi14tech.com/posts/",
+	"uri": "https://pi14tech.com/posts/",
 	"title": "Posts",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://www.pi14tech.com/git/git-revert-merged-commit/",
+	"uri": "https://pi14tech.com/certificate-mgmt/replace-keystore-certificate/",
+	"title": "Replace certificate in keystore",
+	"tags": [],
+	"description": "",
+	"content": "keytool -list -v -keystore /opt/idam/jdk-8u40/jre/lib/security/cacerts keytool -delete -alias test-cert -keystore /opt/idam/jdk-8u40/jre/lib/security/cacerts keytool -import -trustcacerts -file /home/ubuntu/test.cert -alias test-cert -keystore /opt/idam/jdk-8u40/jre/lib/security/cacerts   "
+},
+{
+	"uri": "https://pi14tech.com/git/git-revert-merged-commit/",
 	"title": "Revert - Merged Commit",
 	"tags": [],
 	"description": "",
-	"content": "GIT revert merged commitGit revert a merged commit\nThe -m option specifies the parent number. This is because a merge commit has more than one parent, and Git does not know automatically which parent was the mainline, and which parent was the branch you want to un-merge.\nWhen you view a merge commit in the output of git log, you will see its parents listed on the line that begins with Merge:\ncommit 8f937c683929b08379097828c8a04350b9b8e183 Merge: 8989ee0 7c6b236\ncommit 8f937c683929b08379097828c8a04350b9b8e183 Merge: 8989ee0 7c6b236 Author: Ben James \u0026lt;ben@example.com\u0026gt; Date: Wed Aug 17 22:49:41 2011 +0100\nMerge branch 'gh-pages'\nConflicts: README In this situation, git revert 8f937c6 -m 1 will get you the tree as it was in 8989ee0, and git revert -m 2 will reinstate the tree as it was in 7c6b236.\n "
+	"content": "GIT revert merged commit Git revert a merged commit\n The -m option specifies the parent number. This is because a merge commit has more than one parent, and Git does not know automatically which parent was the mainline, and which parent was the branch you want to un-merge.\n When you view a merge commit in the output of git log, you will see its parents listed on the line that begins with Merge:\n commit 8f937c683929b08379097828c8a04350b9b8e183 Merge: 8989ee0 7c6b236\n commit 8f937c683929b08379097828c8a04350b9b8e183 Merge: 8989ee0 7c6b236 Author: Ben James \u0026lt;ben@example.com\u0026gt; Date: Wed Aug 17 22:49:41 2011 +0100\n Merge branch 'gh-pages'\n Conflicts: README In this situation, git revert 8f937c6 -m 1 will get you the tree as it was in 8989ee0, and git revert -m 2 will reinstate the tree as it was in 7c6b236.\n   "
 },
 {
-	"uri": "https://www.pi14tech.com/git/create-tag/",
+	"uri": "https://pi14tech.com/git/create-tag/",
 	"title": "Tag - create",
 	"tags": [],
 	"description": "",
-	"content": "GIT Create TagTo create a tag on your current branch, run this:\ngit tag \u0026lt;tagname\u0026gt;\nThis will create a local tag with the current state of the branch you are on. When pushing to your remote repo, tags are NOT included by default. You will need to explicitly say that you want to push your tags to your remote repo:\ngit push origin —tags\nNote: This command will push all the tags in your local machine. Try to avoid using this unless you want to purposefully push all the tags available on your machine. One of the problems could be someone could have removed remote tags, but you will repush tags from your local repo, in case you had pulled it down before deletion\n Or if you just want to push a single tag:\ngit push origin \u0026lt;tag\u0026gt;\n "
+	"content": "GIT Create Tag To create a tag on your current branch, run this:\n git tag \u0026lt;tagname\u0026gt;\n This will create a local tag with the current state of the branch you are on. When pushing to your remote repo, tags are NOT included by default. You will need to explicitly say that you want to push your tags to your remote repo:\n git push origin —tags\n   Note  This command will push all the tags in your local machine. Try to avoid using this unless you want to purposefully push all the tags available on your machine. One of the problems could be someone could have removed remote tags, but you will repush tags from your local repo, in case you had pulled it down before deletion     Or if you just want to push a single tag:\n git push origin \u0026lt;tag\u0026gt;\n   "
 },
 {
-	"uri": "https://www.pi14tech.com/git/delete-tag/",
+	"uri": "https://pi14tech.com/git/delete-tag/",
 	"title": "Tag - delete",
 	"tags": [],
 	"description": "",
-	"content": "GIT Delete Local/Remote TagIts quite common during a release process or a tag process, you will need to retag a specific version or remove a tag that was already pushed to remote branch.\nTo remove a tag if it has been pushed to remote repository\ngit push --delete origin tagname\nIf you also need to delete the local tag, use:\ngit tag --delete tagname\nDissecting what happened abovePushing a branch, tag, or other ref to a remote repository involves specifying \"push where, what source, what destination?\"\ngit push where-to-push source-ref:destination-ref\nA real world example where you push your master branch to the origin\u0026#8217;s master branch is:\ngit push origin refs/heads/master:refs/heads/master\nWhich because of default paths, can be shortened to:\ngit push origin master:master\nTags work the same way:\ngit push origin refs/tags/release-1.0:refs/tags/release-1.0 which can also be shortened to:\ngit push origin release-1.0:release-1.0\nBy omitting the source ref (the part before the colon), you push 'nothing' to the destination, deleting the ref on the remote end.\ngit push origin release-1.0:release-1.0\n "
+	"content": "GIT Delete Local/Remote Tag Its quite common during a release process or a tag process, you will need to retag a specific version or remove a tag that was already pushed to remote branch.\n To remove a tag if it has been pushed to remote repository\n git push --delete origin tagname\n If you also need to delete the local tag, use:\n git tag --delete tagname\n Dissecting what happened above Pushing a branch, tag, or other ref to a remote repository involves specifying \"push where, what source, what destination?\"\n git push where-to-push source-ref:destination-ref\n A real world example where you push your master branch to the origin\u0026#8217;s master branch is:\n git push origin refs/heads/master:refs/heads/master\n Which because of default paths, can be shortened to:\n git push origin master:master\n Tags work the same way:\n git push origin refs/tags/release-1.0:refs/tags/release-1.0 which can also be shortened to:\n git push origin release-1.0:release-1.0\n By omitting the source ref (the part before the colon), you push 'nothing' to the destination, deleting the ref on the remote end.\n git push origin release-1.0:release-1.0\n    "
 },
 {
-	"uri": "https://www.pi14tech.com/tags/",
+	"uri": "https://pi14tech.com/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://www.pi14tech.com/technology/",
+	"uri": "https://pi14tech.com/technology/",
 	"title": "Technology",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://www.pi14tech.com/linux/scp/",
+	"uri": "https://pi14tech.com/postman/ci-cd/",
+	"title": "ci/cd",
+	"tags": [],
+	"description": "",
+	"content": "How to use postman in CI/CD pipeline Postman is a pretty powerful rest testing tool with easy to use GUI as well as command line options. Postman scripts can be integrated into your CI/CD pipeline to ensure all the functionalities are in place as you pr;ogress through your development cycle.\n Sample workflow:\n START CI/CD \u0026#8658; DEPLOY \u0026#8658; RUN POSTMAN TESTS \u0026#8658; PUBLISH RESULT \u0026#8658; PASS/FAIL CI/CD\n Within Postman there are various features that are suited for a CI/CD pipeline\n   Collections: This feature allows to create group of tests and organize in folders within the collections. So small reusable collections can be created and copied over to various other test collections, thus promoting reuse.\n  Environment \u0026amp; global configurations: Postman can variablize and use values from environment specific tests. Environment specific values are of utmost importance as the same tests can be reused while your code propagates through various phases\n  Pre request Set up: Each request can be primed or data setup before the actual API request based on parameters.\n  Post request Assertions Once the API request is complete, assertions can be done on response data to ensure it matches the expected result.\n  Command line \u0026amp; GUI Postman provides a command line equivalent called newman, which is a must have as you embedd postman workflow tests into your automated workflows etc.\n  Result reports publishing Postman has a good ecosystem for reports publishing and lot of contribution on various types of reports used with different CI/CD tools\n     "
+},
+{
+	"uri": "https://pi14tech.com/linux/scp/",
 	"title": "scp",
 	"tags": [],
 	"description": "",
-	"content": "Secure copy protocol(SCP) allows files to be copied between machines/servers in a secure way.\nUsage\nscp \u0026lt;source-specification\u0026gt; \u0026lt;destination-specification\u0026gt;\n Tip: Format for a resource in remote(source or destination) is: user@machine:filename\nFormat for file specification on local system is : filenameWhile accessing a remote servermake sure user account exists in remote destinationmake sure filesystem has sufficient permission to be accessed by user account Examples:\nCopy a file(say \"sample.adoc\") from local to remote system(User is in local system shell) scp sample.adoc remote-user@\u0026lt;machine-ip\u0026gt;:file-location\n Copy a file(say \"sample.adoc\") from remote system onto local system current folder(User is in local system shell) scp remote-user@\u0026lt;machine-ip\u0026gt;:\u0026lt;absolute-location-of-sample.adoc\u0026gt; .\n Copy a remote system file onto local system tmp folder(User is in local system shell) scp remote-user@\u0026lt;machine-ip\u0026gt;:\u0026lt;location-of-remote-file\u0026gt; /tmp\n SCP using ssh keyIn most of the scenarios, you will be required to use a certificate(.pub or .pem or ssh) key to access the underlying servers.\nscp -i \u0026lt;identity-file\u0026gt; \u0026lt;source-specification\u0026gt; \u0026lt;destination-specification\u0026gt;\n Important: Make sure your identity file has only limited permission(chmod 400 \u0026lt;identity-file\u0026gt;, if not some servers will complain the access key is too open\n "
+	"content": "Secure copy protocol(SCP) allows files to be copied between machines/servers in a secure way.\n Usage\n scp \u0026lt;source-specification\u0026gt; \u0026lt;destination-specification\u0026gt;\n     Tip   Format for a resource in remote(source or destination) is: user@machine:filename\n  Format for file specification on local system is : filename\n  While accessing a remote server\n  make sure user account exists in remote destination\n  make sure filesystem has sufficient permission to be accessed by user account\n          Examples:\n   Copy a file(say \"sample.adoc\") from local to remote system(User is in local system shell)\n   scp sample.adoc remote-user@\u0026lt;machine-ip\u0026gt;:file-location\n     Copy a file(say \"sample.adoc\") from remote system onto local system current folder(User is in local system shell)\n   scp remote-user@\u0026lt;machine-ip\u0026gt;:\u0026lt;absolute-location-of-sample.adoc\u0026gt; .\n     Copy a remote system file onto local system tmp folder(User is in local system shell)\n   scp remote-user@\u0026lt;machine-ip\u0026gt;:\u0026lt;location-of-remote-file\u0026gt; /tmp\n     SCP using ssh key In most of the scenarios, you will be required to use a certificate(.pub or .pem or ssh) key to access the underlying servers.\n scp -i \u0026lt;identity-file\u0026gt; \u0026lt;source-specification\u0026gt; \u0026lt;destination-specification\u0026gt;\n     Important  Make sure your identity file has only limited permission(chmod 400 \u0026lt;identity-file\u0026gt;, if not some servers will complain the access key is too open       "
 },
 {
-	"uri": "https://www.pi14tech.com/technology/linux/scp/",
+	"uri": "https://pi14tech.com/technology/linux/scp/",
 	"title": "scp",
 	"tags": [],
 	"description": "Testttttt",
-	"content": "Secure copy protocol(SCP) allows files to be copied between machines/servers in a secure way.\nUsage\nscp \u0026lt;source-specification\u0026gt; \u0026lt;destination-specification\u0026gt;\n Tip: Format for a resource in remote(source or destination) is: user@machine:filename\nFormat for file specification on local system is : filenameWhile accessing a remote servermake sure user account exists in remote destinationmake sure filesystem has sufficient permission to be accessed by user account Examples:\nCopy a file(say \"sample.adoc\") from local to remote system(User is in local system shell) scp sample.adoc remote-user@\u0026lt;machine-ip\u0026gt;:file-location\n Copy a file(say \"sample.adoc\") from remote system onto local system current folder(User is in local system shell) scp remote-user@\u0026lt;machine-ip\u0026gt;:\u0026lt;absolute-location-of-sample.adoc\u0026gt; .\n Copy a remote system file onto local system tmp folder(User is in local system shell) scp remote-user@\u0026lt;machine-ip\u0026gt;:\u0026lt;location-of-remote-file\u0026gt; /tmp\n SCP using ssh keyIn most of the scenarios, you will be required to use a certificate(.pub or .pem or ssh) key to access the underlying servers.\nscp -i \u0026lt;identity-file\u0026gt; \u0026lt;source-specification\u0026gt; \u0026lt;destination-specification\u0026gt;\n Important: Make sure your identity file has only limited permission(chmod 400 \u0026lt;identity-file\u0026gt;, if not some servers will complain the access key is too open\n "
+	"content": "Secure copy protocol(SCP) allows files to be copied between machines/servers in a secure way.\n Usage\n scp \u0026lt;source-specification\u0026gt; \u0026lt;destination-specification\u0026gt;\n     Tip   Format for a resource in remote(source or destination) is: user@machine:filename\n  Format for file specification on local system is : filename\n  While accessing a remote server\n  make sure user account exists in remote destination\n  make sure filesystem has sufficient permission to be accessed by user account\n          Examples:\n   Copy a file(say \"sample.adoc\") from local to remote system(User is in local system shell)\n   scp sample.adoc remote-user@\u0026lt;machine-ip\u0026gt;:file-location\n     Copy a file(say \"sample.adoc\") from remote system onto local system current folder(User is in local system shell)\n   scp remote-user@\u0026lt;machine-ip\u0026gt;:\u0026lt;absolute-location-of-sample.adoc\u0026gt; .\n     Copy a remote system file onto local system tmp folder(User is in local system shell)\n   scp remote-user@\u0026lt;machine-ip\u0026gt;:\u0026lt;location-of-remote-file\u0026gt; /tmp\n     SCP using ssh key In most of the scenarios, you will be required to use a certificate(.pub or .pem or ssh) key to access the underlying servers.\n scp -i \u0026lt;identity-file\u0026gt; \u0026lt;source-specification\u0026gt; \u0026lt;destination-specification\u0026gt;\n     Important  Make sure your identity file has only limited permission(chmod 400 \u0026lt;identity-file\u0026gt;, if not some servers will complain the access key is too open       "
 }]

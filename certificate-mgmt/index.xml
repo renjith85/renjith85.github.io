@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Certificate Management on A programmers notebook</title>
+    <link>https://pi14tech.com/certificate-mgmt/</link>
+    <description>Recent content in Certificate Management on A programmers notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://pi14tech.com/certificate-mgmt/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Certificate Key Matcher</title>
+      <link>https://pi14tech.com/certificate-mgmt/certificate-key-matcher/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pi14tech.com/certificate-mgmt/certificate-key-matcher/</guid>
+      <description>When you are dealing with lots of different certificates it can be easy to lose track of which certificate goes with which private key or which CSR was used to generate which certificate.
+ The Certificate Key Matcher simply compares an md5 hash of the private key modulus, the certificate modulus, or the CSR modulus and tells you whether they match or not. You can check whether a certificate matches private key, or a CSR matches a certificate on your own computer by using the OpenSSL commands below:</description>
+    </item>
+    
+    <item>
+      <title>Create self signed certificate</title>
+      <link>https://pi14tech.com/certificate-mgmt/create-self-signed-cert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pi14tech.com/certificate-mgmt/create-self-signed-cert/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Replace certificate in keystore</title>
+      <link>https://pi14tech.com/certificate-mgmt/replace-keystore-certificate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pi14tech.com/certificate-mgmt/replace-keystore-certificate/</guid>
+      <description>keytool -list -v -keystore /opt/idam/jdk-8u40/jre/lib/security/cacerts keytool -delete -alias test-cert -keystore /opt/idam/jdk-8u40/jre/lib/security/cacerts keytool -import -trustcacerts -file /home/ubuntu/test.cert -alias test-cert -keystore /opt/idam/jdk-8u40/jre/lib/security/cacerts   </description>
+    </item>
+    
+  </channel>
+</rss>

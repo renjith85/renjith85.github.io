@@ -2,26 +2,61 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on A programmers notebook</title>
-    <link>https://www.pi14tech.com/linux/</link>
+    <link>https://pi14tech.com/linux/</link>
     <description>Recent content in Linux on A programmers notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://www.pi14tech.com/linux/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://pi14tech.com/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>scp</title>
-      <link>https://www.pi14tech.com/linux/scp/</link>
+      <title></title>
+      <link>https://pi14tech.com/linux/find/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.pi14tech.com/linux/scp/</guid>
+      <guid>https://pi14tech.com/linux/find/</guid>
+      <description>== Recursive list
+ls -R ls -l -R
+Using find command
+find . -print find . -ls
+Using du command
+du -a . du -a /path/to/search/ | more
+== Copy without hidden folder
+rsync -a --exclude=&#39;.*&#39; /source/ /destination
+=== Prevent deleting destination files that match a pattern
+rsync -avrc --delete --exclude somedir source destination
+rsync ... --filter &#39;protect /remote-directory-to-keep/&#39; ...
+rsync ... --filter=&#39;P my-specific-logfile.log&#39;
+exclude all log files from being transferred from the source to destination, and delete all existing ones on the destination.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://pi14tech.com/linux/input/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pi14tech.com/linux/input/</guid>
+      <description>== Ask for user input in bash
+[source,json] while true; do read -p &amp;ldquo;Do you wish to continue running this?&amp;rdquo; inp case $inp in [Yy]* ) break;; [Nn]* ) exit;; * ) echo &amp;ldquo;Please answer yes or no&amp;rdquo;;; esac
+done echo &amp;ldquo;Do you wish to install this program?&amp;rdquo; select yn in &amp;ldquo;Yes&amp;rdquo; &amp;ldquo;No&amp;rdquo;; do case $yn in Yes ) make install; break;; No ) exit;; esac
+done echo -n &amp;ldquo;Is this a good question (y/n)?</description>
+    </item>
+    
+    <item>
+      <title>scp</title>
+      <link>https://pi14tech.com/linux/scp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pi14tech.com/linux/scp/</guid>
       <description>Secure copy protocol(SCP) allows files to be copied between machines/servers in a secure way.
-Usage
-scp &amp;lt;source-specification&amp;gt; &amp;lt;destination-specification&amp;gt;
- Tip: Format for a resource in remote(source or destination) is: user@machine:filename
-Format for file specification on local system is : filenameWhile accessing a remote servermake sure user account exists in remote destinationmake sure filesystem has sufficient permission to be accessed by user account Examples:
-Copy a file(say &#34;sample.adoc&#34;) from local to remote system(User is in local system shell) scp sample.</description>
+ Usage
+ scp &amp;lt;source-specification&amp;gt; &amp;lt;destination-specification&amp;gt;
+     Tip   Format for a resource in remote(source or destination) is: user@machine:filename
+  Format for file specification on local system is : filename
+  While accessing a remote server
+  make sure user account exists in remote destination
+  make sure filesystem has sufficient permission to be accessed by user account</description>
     </item>
     
   </channel>

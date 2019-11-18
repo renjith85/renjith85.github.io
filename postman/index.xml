@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Postman on A programmers notebook</title>
+    <link>https://pi14tech.com/postman/</link>
+    <description>Recent content in Postman on A programmers notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://pi14tech.com/postman/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://pi14tech.com/postman/assertions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pi14tech.com/postman/assertions/</guid>
+      <description>== Postman Response Assertions
+Within postman, test assertions can be included to check the validity of the API request and response objects. Postman test assertions follows a BDD style and are based on the capabilities of the Chai Assertion Library. Read more about Chai at https://www.chaijs.com/api/bdd/
+.Assert status
+[source,json] pm.test(&amp;ldquo;Must fail with response status&amp;rdquo;, function () { pm.response.to.have.status(400);
+}); .Assert json response body element
+[source,json] pm.test(&amp;ldquo;Verify jwt issuer&amp;rdquo;, function () { var jsonData = pm.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://pi14tech.com/postman/hmac-generator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pi14tech.com/postman/hmac-generator/</guid>
+      <description>== HMAC Generator Snippet
+This is a sample code snippet for HMAC generation. In case you want to call an API that is protected using HMAC, below snippet can be used to do the same. Few HMAC providers might have slightly different algorithms, so please make sure the one you are using matches the outline below.
+[source,json] var hmacApplicationUuid = postman.getEnvironmentVariable(&amp;ldquo;hmacApplicationUuid&amp;rdquo;) console.log(hmacApplicationUuid) var hmacSecretKey = postman.getEnvironmentVariable(&amp;ldquo;hmacApplicationKey&amp;rdquo;) console.log(hmacSecretKey)
+var targerApiUrl = request.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://pi14tech.com/postman/newman/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pi14tech.com/postman/newman/</guid>
+      <description>== Newman
+Newman is the commandline equivalent of postman gui
+[source,json] sudo npm install -g newman;
+cd postman-snippets;
+./run_workflows.sh json envs/env.postman_environment.json Iterate through your postman scripts #!/usr/bin/env bash ENVIRONMENT=envs/env.postman_environment.json REPORT_TYPE=html FLIP_POLICIES_BACK_TO_CORE=false
+if [ -n &amp;ldquo;$1&amp;rdquo; ]; then REPORT_TYPE=$1 fi
+if [ -n &amp;ldquo;$2&amp;rdquo; ]; then ENVIRONMENT=$2 fi
+if [ -d reports ]; then rm -r reports fi
+mkdir -p reports rm reports/postman.log 2&amp;gt; /dev/null
+for file in workflow-collections/*.json; do WORKFLOW=$(echo $file | sed -e &amp;ldquo;s/^workflow-collections\//report-/&amp;rdquo; -e &amp;ldquo;s/.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://pi14tech.com/postman/postman-snippets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pi14tech.com/postman/postman-snippets/</guid>
+      <description>== Postman Snippets
+include::loop-request.adoc include::skip-request.adoc include::hmac-generator.adoc include::topt-verifier.adoc include::symmetric-jwt-generator.adoc</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://pi14tech.com/postman/pre-request-scripts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pi14tech.com/postman/pre-request-scripts/</guid>
+      <description>== Pre request
+.Set a random counter
+[source,json] var randomCounter = Math.floor(Math.random() * 1000); postman.setGlobalVariable(&amp;lsquo;userEmailCounter&amp;rsquo;, randomCounter); postman.setEnvironmentVariable(&amp;ldquo;userPassword&amp;rdquo;,&amp;ldquo;P@ssw0rd!&amp;rdquo;)
+console.log(randomCounter) .Assert json response body
+[source,json] pm.test(&amp;ldquo;Verify jwt issuer&amp;rdquo;, function () { var jsonData = pm.response.json(); pm.expect(jsonData.code).to.eql(&amp;ldquo;ASMS-001&amp;rdquo;);
+}); .Decode JWT
+[source,json] pm.test(&amp;ldquo;Verify it has response body&amp;rdquo;, function () { var jsonData = pm.response.json(); // pm.expect(jsonData.code).to.eql(&amp;ldquo;ASMS-001&amp;rdquo;); });
+function jwt_decode(jwt) { var parts = jwt.split(&amp;lsquo;.&amp;rsquo;); // header, payload, signature return JSON.parse(atob(parts[1])); }
+var data = JSON.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://pi14tech.com/postman/request-manipulation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pi14tech.com/postman/request-manipulation/</guid>
+      <description>== Loop
+var randomCounter = postman.getGlobalVariable(&amp;lsquo;lockOutCount&amp;rsquo;); console.log(randomCounter)
+//assertions tests[&amp;ldquo;API expected to fail with&amp;rdquo;] = responseCode.code === 401;
+var data = JSON.parse(responseBody);
+if(randomCounter &amp;lt; 5) { tests[&amp;ldquo;Fail with invalid creds&amp;rdquo;] = data.code === &amp;ldquo;Authentication.InvalidCredentials&amp;rdquo;; } else { tests[&amp;ldquo;Fail with unauthenticated&amp;rdquo;] = data.code === &amp;ldquo;Authentication.Unauthenticated&amp;rdquo;; tests[&amp;ldquo;Check if preferred recovery is Call HelpDesk&amp;rdquo;] = data.details.recovery[0].id === &amp;ldquo;CallHelpDesk&amp;rdquo;; tests[&amp;ldquo;Check if preferred recovery type is AuthN&amp;rdquo;] = data.details.recovery[0].type === &amp;ldquo;AuthN&amp;rdquo;; }
+//loop for x times the same test</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://pi14tech.com/postman/skip-request/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pi14tech.com/postman/skip-request/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://pi14tech.com/postman/symmetric-jwt-generator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pi14tech.com/postman/symmetric-jwt-generator/</guid>
+      <description>== JWT Generator
+[source,json] function base64url(source) { // Encode in classical base64 encodedSource = CryptoJS.enc.Base64.stringify(source);
+// Remove padding equal characters encodedSource = encodedSource.replace(/=+$/, &amp;ldquo;);
+// Replace characters according to base64url specifications encodedSource = encodedSource.replace(/+/g, &amp;lsquo;-&amp;rsquo;); encodedSource = encodedSource.replace(/\//g, &amp;lsquo;_&amp;lsquo;);
+return encodedSource; }
+// Generate JWT
+var header = { &amp;ldquo;alg&amp;rdquo;: &amp;ldquo;HS256&amp;rdquo;, &amp;ldquo;typ&amp;rdquo;: &amp;ldquo;JWT&amp;rdquo; };
+var stringifiedHeader = CryptoJS.enc.Utf8.parse(JSON.stringify(header)); var encodedHeader = base64url(stringifiedHeader);
+//TODO: Feed in a dummy payload for the JWT var data = { &amp;ldquo;content&amp;rdquo; : { &amp;ldquo;key1&amp;rdquo;: &amp;ldquo;value1&amp;rdquo; } };</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://pi14tech.com/postman/totp-verifier/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pi14tech.com/postman/totp-verifier/</guid>
+      <description>== TOTP verifier
+.TOTP Sessi updateOtp()
+function dec2hex(s) { return (s &amp;lt; 15.5 ? &amp;lsquo;0&amp;rsquo; : &amp;ldquo;) + Math.round(s).toString(16); } function hex2dec(s) { return parseInt(s, 16); }
+function base32tohex(base32) { var base32chars = &amp;quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ234567&amp;quot;; var bits = &amp;quot;&amp;quot;; var hex = &amp;quot;&amp;quot;; for (var i = 0; i &amp;lt; base32.length; i++) { var val = base32chars.indexOf(base32.charAt(i).toUpperCase()); bits += leftpad(val.toString(2), 5, &#39;0&#39;); } for (var j = 0; j+4 &amp;lt;= bits.</description>
+    </item>
+    
+    <item>
+      <title>ci/cd</title>
+      <link>https://pi14tech.com/postman/ci-cd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pi14tech.com/postman/ci-cd/</guid>
+      <description>How to use postman in CI/CD pipeline Postman is a pretty powerful rest testing tool with easy to use GUI as well as command line options. Postman scripts can be integrated into your CI/CD pipeline to ensure all the functionalities are in place as you pr;ogress through your development cycle.
+ Sample workflow:
+ START CI/CD &amp;#8658; DEPLOY &amp;#8658; RUN POSTMAN TESTS &amp;#8658; PUBLISH RESULT &amp;#8658; PASS/FAIL CI/CD
+ Within Postman there are various features that are suited for a CI/CD pipeline</description>
+    </item>
+    
+  </channel>
+</rss>
