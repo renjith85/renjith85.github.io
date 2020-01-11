@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GIT on A programmers notebook</title>
@@ -9,6 +9,32 @@
     
 	<atom:link href="https://pi14tech.com/git/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title></title>
+      <link>https://pi14tech.com/git/identity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pi14tech.com/git/identity/</guid>
+      <description>Identifying yourself to Git Last updated 26 March 2016.
+ To be properly credited for your contributions on Drupal.org, you must identify yourself to each installation of Git you use (home, office, laptop, etc).
+ Identifying yourself to Git Personalized versions of both of the below commands with your details filled in can be found on at &#34;Your Dashboard&#34; » Profile » Edit » &#34;Git access&#34;.
+ From the command line:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://pi14tech.com/git/ssh-to-git-multiple-accounts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pi14tech.com/git/ssh-to-git-multiple-accounts/</guid>
+      <description>===
+ https://guide.freecodecamp.org/git/authenticate-with-github-using-ssh/
+ After setting up the key
+ ssh -T git@github.com-cerbabu
+ `Host github.com-cerbabu Hostname github.com User git AddKeysToAgent yes UseKeyChain yes IdentityFile /Users/rbabu/.ssh/github_ce_id_rsa
+ Host github.com-renjith85 Hostname github.com User git AddKeysToAgent yes UseKeyChain yes IdentityFile /Users/rbabu/.ssh/github_id_rsa   Host github.com-default Hostname github.com User git AddKeysToAgent yes UseKeyChain yes IdentityFile /Users/rbabu/.ssh/github_id_rsa `   </description>
+    </item>
     
     <item>
       <title>1. Cheatsheet</title>

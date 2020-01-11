@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine-learning on A programmers notebook</title>
+    <link>https://pi14tech.com/machine-learning/</link>
+    <description>Recent content in Machine-learning on A programmers notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://pi14tech.com/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://pi14tech.com/machine-learning/octave/setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pi14tech.com/machine-learning/octave/setup/</guid>
+      <description>Installing octave on MacOS In order to install 5.1.0 we are going to use the Homebrew package manager. If you don’t have Homebrew installed, you can install it by running the next command in a Terminal:
+ Link to homebrew section in macos book
+ Start by making sure that your Homebrew installation is up to date:
+ 1 brew update 2 brew upgrade Finally, install Octave on your system:</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on A programmers notebook</title>
@@ -16,8 +16,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pi14tech.com/posts/java/java/</guid>
-      <description>Handy techniques to deal with Java
- </description>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Summary of document&lt;/p&gt;
+&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -26,8 +27,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pi14tech.com/posts/linux/linux/</guid>
-      <description>Handy techniques to deal with linux
- </description>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Summary of document&lt;/p&gt;
+&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -45,14 +47,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pi14tech.com/posts/scp/</guid>
-      <description>Secure copy protocol(SCP) allows files to be copied between machines/servers in a secure way.
- Usage
- scp &amp;lt;source-specification&amp;gt; &amp;lt;destination-specification&amp;gt;
-     Tip   Format for a resource in remote(source or destination) is: user@machine:filename
-  Format for file specification on local system is : filename
-  While accessing a remote server
-  make sure user account exists in remote destination
-  make sure filesystem has sufficient permission to be accessed by user account</description>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Summary of document&lt;/p&gt;
+&lt;/div&gt;</description>
     </item>
     
     <item>

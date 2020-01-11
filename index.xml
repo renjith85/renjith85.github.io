@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>A programmers notebook</title>
@@ -16,12 +16,39 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pi14tech.com/asciidoc/cheatsheet/</guid>
-      <description> == Links
-[cols=&amp;ldquo;1a,1a&amp;rdquo;, options=&amp;ldquo;header&amp;rdquo;] |=== | ASCII Format | Rendered
-| https://asciidoctor.org - automatic! | https://asciidoctor.org - automatic!
-| https://asciidoctor.org[Asciidoctor] | https://asciidoctor.org[Asciidoctor]
-|===
-ASCII Format https://github.com/asciidoctor[Asciidoctor @ GitHub] </description>
+      <description>Links     ASCII Format Rendered     https://asciidoctor.org - automatic!
+ https://asciidoctor.org - automatic!
+   ` Asciidoctor`
+ Asciidoctor
+    ASCII Format
+    Asciidoctor @ GitHub
+      </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://pi14tech.com/git/identity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pi14tech.com/git/identity/</guid>
+      <description>Identifying yourself to Git Last updated 26 March 2016.
+ To be properly credited for your contributions on Drupal.org, you must identify yourself to each installation of Git you use (home, office, laptop, etc).
+ Identifying yourself to Git Personalized versions of both of the below commands with your details filled in can be found on at &#34;Your Dashboard&#34; » Profile » Edit » &#34;Git access&#34;.
+ From the command line:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://pi14tech.com/git/ssh-to-git-multiple-accounts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pi14tech.com/git/ssh-to-git-multiple-accounts/</guid>
+      <description>===
+ https://guide.freecodecamp.org/git/authenticate-with-github-using-ssh/
+ After setting up the key
+ ssh -T git@github.com-cerbabu
+ `Host github.com-cerbabu Hostname github.com User git AddKeysToAgent yes UseKeyChain yes IdentityFile /Users/rbabu/.ssh/github_ce_id_rsa
+ Host github.com-renjith85 Hostname github.com User git AddKeysToAgent yes UseKeyChain yes IdentityFile /Users/rbabu/.ssh/github_id_rsa   Host github.com-default Hostname github.com User git AddKeysToAgent yes UseKeyChain yes IdentityFile /Users/rbabu/.ssh/github_id_rsa `   </description>
     </item>
     
     <item>
@@ -30,19 +57,15 @@ ASCII Format https://github.com/asciidoctor[Asciidoctor @ GitHub] </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pi14tech.com/linux/find/</guid>
-      <description>== Recursive list
-ls -R ls -l -R
-Using find command
-find . -print find . -ls
-Using du command
-du -a . du -a /path/to/search/ | more
-== Copy without hidden folder
-rsync -a --exclude=&#39;.*&#39; /source/ /destination
-=== Prevent deleting destination files that match a pattern
-rsync -avrc --delete --exclude somedir source destination
-rsync ... --filter &#39;protect /remote-directory-to-keep/&#39; ...
-rsync ... --filter=&#39;P my-specific-logfile.log&#39;
-exclude all log files from being transferred from the source to destination, and delete all existing ones on the destination.</description>
+      <description>Recursive list ls -R ls -l -R
+ Using find command
+ find . -print find . -ls
+ Using du command
+ du -a . du -a /path/to/search/ | more
+   Copy without hidden folder rsync -a --exclude=&#39;.*&#39; /source/ /destination
+ Prevent deleting destination files that match a pattern rsync -avrc --delete --exclude somedir source destination
+ rsync &amp;#8230;&amp;#8203; --filter &#39;protect /remote-directory-to-keep/&#39; &amp;#8230;&amp;#8203;
+ rsync &amp;#8230;&amp;#8203; --filter=&#39;P my-specific-logfile.</description>
     </item>
     
     <item>
@@ -51,10 +74,52 @@ exclude all log files from being transferred from the source to destination, and
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pi14tech.com/linux/input/</guid>
-      <description>== Ask for user input in bash
-[source,json] while true; do read -p &amp;ldquo;Do you wish to continue running this?&amp;rdquo; inp case $inp in [Yy]* ) break;; [Nn]* ) exit;; * ) echo &amp;ldquo;Please answer yes or no&amp;rdquo;;; esac
-done echo &amp;ldquo;Do you wish to install this program?&amp;rdquo; select yn in &amp;ldquo;Yes&amp;rdquo; &amp;ldquo;No&amp;rdquo;; do case $yn in Yes ) make install; break;; No ) exit;; esac
-done echo -n &amp;ldquo;Is this a good question (y/n)?</description>
+      <description>Ask for user input in bash while true; do read -p &#34;Do you wish to continue running this?&#34; inp case $inp in [Yy]* ) break;; [Nn]* ) exit;; * ) echo &#34;Please answer yes or no&#34;;; esac done   echo &#34;Do you wish to install this program?&#34; select yn in &#34;Yes&#34; &#34;No&#34;; do case $yn in Yes ) make install; break;; No ) exit;; esac done   echo -n &#34;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://pi14tech.com/machine-learning/octave/setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pi14tech.com/machine-learning/octave/setup/</guid>
+      <description>Installing octave on MacOS In order to install 5.1.0 we are going to use the Homebrew package manager. If you don’t have Homebrew installed, you can install it by running the next command in a Terminal:
+ Link to homebrew section in macos book
+ Start by making sure that your Homebrew installation is up to date:
+ 1 brew update 2 brew upgrade Finally, install Octave on your system:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://pi14tech.com/macos/homebrew/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pi14tech.com/macos/homebrew/</guid>
+      <description>Homebrew My favourite package manager for macos is Homebrew.
+ Install homebrew by following instructions at https://brew.sh/
+   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://pi14tech.com/nodejs/building-simple-app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pi14tech.com/nodejs/building-simple-app/</guid>
+      <description>https://expressjs.com/en/starter/hello-world.html
+ https://expressjs.com/en/starter/installing.html
+ https://nodejs.org/en/docs/guides/getting-started-guide/
+ https://expressjs.com/en/starter/installing.html
+ https://expressjs.com/en/guide/routing.html
+ https://lodash.com/
+ https://stackoverflow.com/questions/44068359/how-can-i-filter-json-using-lodash-js-or-underscore-js
+ https://stackoverflow.com/questions/40222563/how-to-make-a-external-api-call-inside-express-server
+ request(&#39;http://owaspdt.cloudentity.com:8080/api&#39;, function(error, response, body) { if(!error &amp;amp;&amp;amp; response.statusCode == 200) { console.log(body) } })
+ const request = require(&#39;request&#39;)
+ http://nodejs.org/api/http.html#http_http_request_options_callback
+ http://owaspdt.cloudentity.com:8080/api/swagger.json
+ https://flaviocopes.com/node-make-http-requests/
+   </description>
     </item>
     
     <item>
@@ -63,12 +128,8 @@ done echo -n &amp;ldquo;Is this a good question (y/n)?</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pi14tech.com/postman/assertions/</guid>
-      <description>== Postman Response Assertions
-Within postman, test assertions can be included to check the validity of the API request and response objects. Postman test assertions follows a BDD style and are based on the capabilities of the Chai Assertion Library. Read more about Chai at https://www.chaijs.com/api/bdd/
-.Assert status
-[source,json] pm.test(&amp;ldquo;Must fail with response status&amp;rdquo;, function () { pm.response.to.have.status(400);
-}); .Assert json response body element
-[source,json] pm.test(&amp;ldquo;Verify jwt issuer&amp;rdquo;, function () { var jsonData = pm.</description>
+      <description>Postman Response Assertions Within postman, test assertions can be included to check the validity of the API request and response objects. Postman test assertions follows a BDD style and are based on the capabilities of the Chai Assertion Library. Read more about Chai at https://www.chaijs.com/api/bdd/
+ Assert status pm.test(&#34;Must fail with response status&#34;, function () { pm.response.to.have.status(400); });   Assert json response body element pm.test(&#34;Verify jwt issuer&#34;, function () { var jsonData = pm.</description>
     </item>
     
     <item>
@@ -77,10 +138,8 @@ Within postman, test assertions can be included to check the validity of the API
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pi14tech.com/postman/hmac-generator/</guid>
-      <description>== HMAC Generator Snippet
-This is a sample code snippet for HMAC generation. In case you want to call an API that is protected using HMAC, below snippet can be used to do the same. Few HMAC providers might have slightly different algorithms, so please make sure the one you are using matches the outline below.
-[source,json] var hmacApplicationUuid = postman.getEnvironmentVariable(&amp;ldquo;hmacApplicationUuid&amp;rdquo;) console.log(hmacApplicationUuid) var hmacSecretKey = postman.getEnvironmentVariable(&amp;ldquo;hmacApplicationKey&amp;rdquo;) console.log(hmacSecretKey)
-var targerApiUrl = request.</description>
+      <description>HMAC Generator Snippet This is a sample code snippet for HMAC generation. In case you want to call an API that is protected using HMAC, below snippet can be used to do the same. Few HMAC providers might have slightly different algorithms, so please make sure the one you are using matches the outline below.
+ var hmacApplicationUuid = postman.getEnvironmentVariable(&#34;hmacApplicationUuid&#34;) console.log(hmacApplicationUuid) var hmacSecretKey = postman.getEnvironmentVariable(&#34;hmacApplicationKey&#34;) console.log(hmacSecretKey) var targerApiUrl = request.url.replace(/{{(\w*)}}/g,function(str,key) { return postman.</description>
     </item>
     
     <item>
@@ -89,16 +148,9 @@ var targerApiUrl = request.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pi14tech.com/postman/newman/</guid>
-      <description>== Newman
-Newman is the commandline equivalent of postman gui
-[source,json] sudo npm install -g newman;
-cd postman-snippets;
-./run_workflows.sh json envs/env.postman_environment.json Iterate through your postman scripts #!/usr/bin/env bash ENVIRONMENT=envs/env.postman_environment.json REPORT_TYPE=html FLIP_POLICIES_BACK_TO_CORE=false
-if [ -n &amp;ldquo;$1&amp;rdquo; ]; then REPORT_TYPE=$1 fi
-if [ -n &amp;ldquo;$2&amp;rdquo; ]; then ENVIRONMENT=$2 fi
-if [ -d reports ]; then rm -r reports fi
-mkdir -p reports rm reports/postman.log 2&amp;gt; /dev/null
-for file in workflow-collections/*.json; do WORKFLOW=$(echo $file | sed -e &amp;ldquo;s/^workflow-collections\//report-/&amp;rdquo; -e &amp;ldquo;s/.</description>
+      <description>Newman Newman is the commandline equivalent of postman gui
+ sudo npm install -g newman; cd postman-snippets; ./run_workflows.sh json envs/env.postman_environment.json   Iterate through your postman scripts
+ #!/usr/bin/env bash ENVIRONMENT=envs/env.postman_environment.json REPORT_TYPE=html FLIP_POLICIES_BACK_TO_CORE=false if [ -n &#34;$1&#34; ]; then REPORT_TYPE=$1 fi if [ -n &#34;$2&#34; ]; then ENVIRONMENT=$2 fi if [ -d reports ]; then rm -r reports fi mkdir -p reports rm reports/postman.log 2&amp;gt; /dev/null for file in workflow-collections/*.json; do WORKFLOW=$(echo $file | sed -e &#34;</description>
     </item>
     
     <item>
@@ -107,8 +159,8 @@ for file in workflow-collections/*.json; do WORKFLOW=$(echo $file | sed -e &amp;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pi14tech.com/postman/postman-snippets/</guid>
-      <description>== Postman Snippets
-include::loop-request.adoc include::skip-request.adoc include::hmac-generator.adoc include::topt-verifier.adoc include::symmetric-jwt-generator.adoc</description>
+      <description>Postman Snippets include::loop-request.adoc include::skip-request.adoc include::hmac-generator.adoc include::topt-verifier.adoc include::symmetric-jwt-generator.adoc
+   </description>
     </item>
     
     <item>
@@ -117,15 +169,7 @@ include::loop-request.adoc include::skip-request.adoc include::hmac-generator.ad
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pi14tech.com/postman/pre-request-scripts/</guid>
-      <description>== Pre request
-.Set a random counter
-[source,json] var randomCounter = Math.floor(Math.random() * 1000); postman.setGlobalVariable(&amp;lsquo;userEmailCounter&amp;rsquo;, randomCounter); postman.setEnvironmentVariable(&amp;ldquo;userPassword&amp;rdquo;,&amp;ldquo;P@ssw0rd!&amp;rdquo;)
-console.log(randomCounter) .Assert json response body
-[source,json] pm.test(&amp;ldquo;Verify jwt issuer&amp;rdquo;, function () { var jsonData = pm.response.json(); pm.expect(jsonData.code).to.eql(&amp;ldquo;ASMS-001&amp;rdquo;);
-}); .Decode JWT
-[source,json] pm.test(&amp;ldquo;Verify it has response body&amp;rdquo;, function () { var jsonData = pm.response.json(); // pm.expect(jsonData.code).to.eql(&amp;ldquo;ASMS-001&amp;rdquo;); });
-function jwt_decode(jwt) { var parts = jwt.split(&amp;lsquo;.&amp;rsquo;); // header, payload, signature return JSON.parse(atob(parts[1])); }
-var data = JSON.</description>
+      <description>Pre request Set a random counter var randomCounter = Math.floor(Math.random() * 1000); postman.setGlobalVariable(&#39;userEmailCounter&#39;, randomCounter); postman.setEnvironmentVariable(&#34;userPassword&#34;,&#34;P@ssw0rd!&#34;) console.log(randomCounter)   Assert json response body pm.test(&#34;Verify jwt issuer&#34;, function () { var jsonData = pm.response.json(); pm.expect(jsonData.code).to.eql(&#34;ASMS-001&#34;); });   Decode JWT pm.test(&#34;Verify it has response body&#34;, function () { var jsonData = pm.response.json(); // pm.expect(jsonData.code).to.eql(&#34;ASMS-001&#34;); }); function jwt_decode(jwt) { var parts = jwt.split(&#39;.&#39;); // header, payload, signature return JSON.parse(atob(parts[1])); } var data = JSON.</description>
     </item>
     
     <item>
@@ -134,12 +178,7 @@ var data = JSON.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pi14tech.com/postman/request-manipulation/</guid>
-      <description>== Loop
-var randomCounter = postman.getGlobalVariable(&amp;lsquo;lockOutCount&amp;rsquo;); console.log(randomCounter)
-//assertions tests[&amp;ldquo;API expected to fail with&amp;rdquo;] = responseCode.code === 401;
-var data = JSON.parse(responseBody);
-if(randomCounter &amp;lt; 5) { tests[&amp;ldquo;Fail with invalid creds&amp;rdquo;] = data.code === &amp;ldquo;Authentication.InvalidCredentials&amp;rdquo;; } else { tests[&amp;ldquo;Fail with unauthenticated&amp;rdquo;] = data.code === &amp;ldquo;Authentication.Unauthenticated&amp;rdquo;; tests[&amp;ldquo;Check if preferred recovery is Call HelpDesk&amp;rdquo;] = data.details.recovery[0].id === &amp;ldquo;CallHelpDesk&amp;rdquo;; tests[&amp;ldquo;Check if preferred recovery type is AuthN&amp;rdquo;] = data.details.recovery[0].type === &amp;ldquo;AuthN&amp;rdquo;; }
-//loop for x times the same test</description>
+      <description>Loop var randomCounter = postman.getGlobalVariable(&#39;lockOutCount&#39;); console.log(randomCounter) //assertions tests[&#34;API expected to fail with&#34;] = responseCode.code === 401; var data = JSON.parse(responseBody); if(randomCounter &amp;lt; 5) { tests[&#34;Fail with invalid creds&#34;] = data.code === &#34;Authentication.InvalidCredentials&#34;; } else { tests[&#34;Fail with unauthenticated&#34;] = data.code === &#34;Authentication.Unauthenticated&#34;; tests[&#34;Check if preferred recovery is Call HelpDesk&#34;] = data.details.recovery[0].id === &#34;CallHelpDesk&#34;; tests[&#34;Check if preferred recovery type is AuthN&#34;] = data.details.recovery[0].type === &#34;AuthN&#34;; } //loop for x times the same test randomCounter = parseInt(randomCounter) + 1 postman.</description>
     </item>
     
     <item>
@@ -157,15 +196,7 @@ if(randomCounter &amp;lt; 5) { tests[&amp;ldquo;Fail with invalid creds&amp;rdqu
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pi14tech.com/postman/symmetric-jwt-generator/</guid>
-      <description>== JWT Generator
-[source,json] function base64url(source) { // Encode in classical base64 encodedSource = CryptoJS.enc.Base64.stringify(source);
-// Remove padding equal characters encodedSource = encodedSource.replace(/=+$/, &amp;ldquo;);
-// Replace characters according to base64url specifications encodedSource = encodedSource.replace(/+/g, &amp;lsquo;-&amp;rsquo;); encodedSource = encodedSource.replace(/\//g, &amp;lsquo;_&amp;lsquo;);
-return encodedSource; }
-// Generate JWT
-var header = { &amp;ldquo;alg&amp;rdquo;: &amp;ldquo;HS256&amp;rdquo;, &amp;ldquo;typ&amp;rdquo;: &amp;ldquo;JWT&amp;rdquo; };
-var stringifiedHeader = CryptoJS.enc.Utf8.parse(JSON.stringify(header)); var encodedHeader = base64url(stringifiedHeader);
-//TODO: Feed in a dummy payload for the JWT var data = { &amp;ldquo;content&amp;rdquo; : { &amp;ldquo;key1&amp;rdquo;: &amp;ldquo;value1&amp;rdquo; } };</description>
+      <description>JWT Generator function base64url(source) { // Encode in classical base64 encodedSource = CryptoJS.enc.Base64.stringify(source); // Remove padding equal characters encodedSource = encodedSource.replace(/=+$/, &#39;&#39;); // Replace characters according to base64url specifications encodedSource = encodedSource.replace(/\+/g, &#39;-&#39;); encodedSource = encodedSource.replace(/\//g, &#39;_&#39;); return encodedSource; } // Generate JWT var header = { &#34;alg&#34;: &#34;HS256&#34;, &#34;typ&#34;: &#34;JWT&#34; }; var stringifiedHeader = CryptoJS.enc.Utf8.parse(JSON.stringify(header)); var encodedHeader = base64url(stringifiedHeader); //TODO: Feed in a dummy payload for the JWT var data = { &#34;</description>
     </item>
     
     <item>
@@ -174,10 +205,7 @@ var stringifiedHeader = CryptoJS.enc.Utf8.parse(JSON.stringify(header)); var enc
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pi14tech.com/postman/totp-verifier/</guid>
-      <description>== TOTP verifier
-.TOTP Sessi updateOtp()
-function dec2hex(s) { return (s &amp;lt; 15.5 ? &amp;lsquo;0&amp;rsquo; : &amp;ldquo;) + Math.round(s).toString(16); } function hex2dec(s) { return parseInt(s, 16); }
-function base32tohex(base32) { var base32chars = &amp;quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ234567&amp;quot;; var bits = &amp;quot;&amp;quot;; var hex = &amp;quot;&amp;quot;; for (var i = 0; i &amp;lt; base32.length; i++) { var val = base32chars.indexOf(base32.charAt(i).toUpperCase()); bits += leftpad(val.toString(2), 5, &#39;0&#39;); } for (var j = 0; j+4 &amp;lt;= bits.</description>
+      <description>TOTP verifier TOTP Sessi  updateOtp() function dec2hex(s) { return (s &amp;lt; 15.5 ? &#39;0&#39; : &#39;&#39;) + Math.round(s).toString(16); } function hex2dec(s) { return parseInt(s, 16); } function base32tohex(base32) { var base32chars = &#34;ABCDEFGHIJKLMNOPQRSTUVWXYZ234567&#34;; var bits = &#34;&#34;; var hex = &#34;&#34;; for (var i = 0; i &amp;lt; base32.length; i++) { var val = base32chars.indexOf(base32.charAt(i).toUpperCase()); bits += leftpad(val.toString(2), 5, &#39;0&#39;); } for (var j = 0; j+4 &amp;lt;= bits.length;j+=4) { var chunk = bits.</description>
     </item>
     
     <item>
@@ -186,8 +214,9 @@ function base32tohex(base32) { var base32chars = &amp;quot;ABCDEFGHIJKLMNOPQRSTU
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pi14tech.com/posts/java/java/</guid>
-      <description>Handy techniques to deal with Java
- </description>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Summary of document&lt;/p&gt;
+&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -196,8 +225,9 @@ function base32tohex(base32) { var base32chars = &amp;quot;ABCDEFGHIJKLMNOPQRSTU
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pi14tech.com/posts/linux/linux/</guid>
-      <description>Handy techniques to deal with linux
- </description>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Summary of document&lt;/p&gt;
+&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -215,14 +245,9 @@ function base32tohex(base32) { var base32chars = &amp;quot;ABCDEFGHIJKLMNOPQRSTU
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pi14tech.com/posts/scp/</guid>
-      <description>Secure copy protocol(SCP) allows files to be copied between machines/servers in a secure way.
- Usage
- scp &amp;lt;source-specification&amp;gt; &amp;lt;destination-specification&amp;gt;
-     Tip   Format for a resource in remote(source or destination) is: user@machine:filename
-  Format for file specification on local system is : filename
-  While accessing a remote server
-  make sure user account exists in remote destination
-  make sure filesystem has sufficient permission to be accessed by user account</description>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Summary of document&lt;/p&gt;
+&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -245,12 +270,9 @@ Hugo relies on Markdown files with front matter for meta data.</description>
       
       <guid>https://pi14tech.com/site-building/dns/</guid>
       <description>Purchase domain for godaddy
- Host site in github
- Configure go daddy domain to git hub page
-  f the domain has been forwarded or automatically connected this would need to be removed if you&amp;rsquo;re going to edit the DNS manually. Here is an article on the connection wizard, if anything is on in there make sure to turn it off.
-https://www.godaddy.com/help/forward-a-domain-12123
-A record-
-Host: @</description>
+  Host site in github
+  Configure go daddy domain to git hub page
+   f the domain has been forwarded or automatically connected this would need to be removed if you&#39;re going to edit the DNS manually. Here is an article on the connection wizard, if anything is on in there make sure to turn it off. https://www.godaddy.com/help/forward-a-domain-12123 A record- Host: @ Points to: [IP address from below] You can create multiple A records, one for each address.</description>
     </item>
     
     <item>
@@ -259,10 +281,10 @@ Host: @</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pi14tech.com/site-building/references/</guid>
-      <description>== References
-https://axdlog.com/2018/using-hugo-and-travis-ci-to-deploy-blog-to-github-pages-automatically/
-https://github.com/matcornic/hugo-theme-learn
-https://discourse.gohugo.io/t/public-folder-and-its-content-not-generated/10535</description>
+      <description>References https://axdlog.com/2018/using-hugo-and-travis-ci-to-deploy-blog-to-github-pages-automatically/
+ https://github.com/matcornic/hugo-theme-learn
+ https://discourse.gohugo.io/t/public-folder-and-its-content-not-generated/10535
+   </description>
     </item>
     
     <item>
@@ -271,8 +293,9 @@ https://discourse.gohugo.io/t/public-folder-and-its-content-not-generated/10535<
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pi14tech.com/technology/linux/linux/</guid>
-      <description>Handy techniques to deal with linux
- </description>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Summary of document&lt;/p&gt;
+&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -327,12 +350,35 @@ https://discourse.gohugo.io/t/public-folder-and-its-content-not-generated/10535<
     </item>
     
     <item>
+      <title>ci/cd</title>
+      <link>https://pi14tech.com/postman/ci-cd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pi14tech.com/postman/ci-cd/</guid>
+      <description>How to use postman in CI/CD pipeline Postman is a pretty powerful rest testing tool with easy to use GUI as well as command line options. Postman scripts can be integrated into your CI/CD pipeline to ensure all the functionalities are in place as you pr;ogress through your development cycle.
+ Sample workflow:
+ START CI/CD &amp;#8658; DEPLOY &amp;#8658; RUN POSTMAN TESTS &amp;#8658; PUBLISH RESULT &amp;#8658; PASS/FAIL CI/CD
+ Within Postman there are various features that are suited for a CI/CD pipeline</description>
+    </item>
+    
+    <item>
       <title>Create self signed certificate</title>
       <link>https://pi14tech.com/certificate-mgmt/create-self-signed-cert/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pi14tech.com/certificate-mgmt/create-self-signed-cert/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Generics</title>
+      <link>https://pi14tech.com/technology/java/java/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pi14tech.com/technology/java/java/</guid>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Summary of document&lt;/p&gt;
+&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -371,16 +417,6 @@ https://discourse.gohugo.io/t/public-folder-and-its-content-not-generated/10535<
     </item>
     
     <item>
-      <title>Generics</title>
-      <link>https://pi14tech.com/technology/java/java/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://pi14tech.com/technology/java/java/</guid>
-      <description>Handy techniques to deal with Java
- </description>
-    </item>
-    
-    <item>
       <title>Merge</title>
       <link>https://pi14tech.com/git/git-merge/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -415,6 +451,33 @@ https://discourse.gohugo.io/t/public-folder-and-its-content-not-generated/10535<
     </item>
     
     <item>
+      <title>scp</title>
+      <link>https://pi14tech.com/linux/scp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pi14tech.com/linux/scp/</guid>
+      <description>Secure copy protocol(SCP) allows files to be copied between machines/servers in a secure way.
+ Usage
+ scp &amp;lt;source-specification&amp;gt; &amp;lt;destination-specification&amp;gt;
+     Tip   Format for a resource in remote(source or destination) is: user@machine:filename
+  Format for file specification on local system is : filename
+  While accessing a remote server
+  make sure user account exists in remote destination
+  make sure filesystem has sufficient permission to be accessed by user account</description>
+    </item>
+    
+    <item>
+      <title>scp</title>
+      <link>https://pi14tech.com/technology/linux/scp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pi14tech.com/technology/linux/scp/</guid>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Summary of document&lt;/p&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
       <title>Tag - create</title>
       <link>https://pi14tech.com/git/create-tag/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -439,50 +502,6 @@ https://discourse.gohugo.io/t/public-folder-and-its-content-not-generated/10535<
  If you also need to delete the local tag, use:
  git tag --delete tagname
  Dissecting what happened above Pushing a branch, tag, or other ref to a remote repository involves specifying &#34;</description>
-    </item>
-    
-    <item>
-      <title>ci/cd</title>
-      <link>https://pi14tech.com/postman/ci-cd/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://pi14tech.com/postman/ci-cd/</guid>
-      <description>How to use postman in CI/CD pipeline Postman is a pretty powerful rest testing tool with easy to use GUI as well as command line options. Postman scripts can be integrated into your CI/CD pipeline to ensure all the functionalities are in place as you pr;ogress through your development cycle.
- Sample workflow:
- START CI/CD &amp;#8658; DEPLOY &amp;#8658; RUN POSTMAN TESTS &amp;#8658; PUBLISH RESULT &amp;#8658; PASS/FAIL CI/CD
- Within Postman there are various features that are suited for a CI/CD pipeline</description>
-    </item>
-    
-    <item>
-      <title>scp</title>
-      <link>https://pi14tech.com/linux/scp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://pi14tech.com/linux/scp/</guid>
-      <description>Secure copy protocol(SCP) allows files to be copied between machines/servers in a secure way.
- Usage
- scp &amp;lt;source-specification&amp;gt; &amp;lt;destination-specification&amp;gt;
-     Tip   Format for a resource in remote(source or destination) is: user@machine:filename
-  Format for file specification on local system is : filename
-  While accessing a remote server
-  make sure user account exists in remote destination
-  make sure filesystem has sufficient permission to be accessed by user account</description>
-    </item>
-    
-    <item>
-      <title>scp</title>
-      <link>https://pi14tech.com/technology/linux/scp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://pi14tech.com/technology/linux/scp/</guid>
-      <description>Secure copy protocol(SCP) allows files to be copied between machines/servers in a secure way.
- Usage
- scp &amp;lt;source-specification&amp;gt; &amp;lt;destination-specification&amp;gt;
-     Tip   Format for a resource in remote(source or destination) is: user@machine:filename
-  Format for file specification on local system is : filename
-  While accessing a remote server
-  make sure user account exists in remote destination
-  make sure filesystem has sufficient permission to be accessed by user account</description>
     </item>
     
   </channel>

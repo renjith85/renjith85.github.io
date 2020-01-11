@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
@@ -28,50 +28,87 @@
   
   <url>
     <loc>https://pi14tech.com/asciidoc/cheatsheet/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pi14tech.com/git/identity/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pi14tech.com/git/ssh-to-git-multiple-accounts/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://pi14tech.com/linux/find/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://pi14tech.com/linux/input/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pi14tech.com/machine-learning/octave/setup/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pi14tech.com/macos/homebrew/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pi14tech.com/nodejs/building-simple-app/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://pi14tech.com/postman/assertions/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://pi14tech.com/postman/hmac-generator/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://pi14tech.com/postman/newman/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://pi14tech.com/postman/postman-snippets/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://pi14tech.com/postman/pre-request-scripts/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://pi14tech.com/postman/request-manipulation/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://pi14tech.com/postman/skip-request/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://pi14tech.com/postman/symmetric-jwt-generator/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://pi14tech.com/postman/totp-verifier/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -92,14 +129,17 @@
   
   <url>
     <loc>https://pi14tech.com/posts/test/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://pi14tech.com/site-building/dns/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://pi14tech.com/site-building/references/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -112,7 +152,6 @@
   
   <url>
     <loc>https://pi14tech.com/asciidoc/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -121,7 +160,6 @@
   
   <url>
     <loc>https://pi14tech.com/categories/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -133,7 +171,15 @@
   </url>
   
   <url>
+    <loc>https://pi14tech.com/postman/ci-cd/</loc>
+  </url>
+  
+  <url>
     <loc>https://pi14tech.com/certificate-mgmt/create-self-signed-cert/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pi14tech.com/technology/java/java/</loc>
   </url>
   
   <url>
@@ -149,7 +195,11 @@
   </url>
   
   <url>
-    <loc>https://pi14tech.com/technology/java/java/</loc>
+    <loc>https://pi14tech.com/machine-learning/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pi14tech.com/macos/</loc>
   </url>
   
   <url>
@@ -157,8 +207,11 @@
   </url>
   
   <url>
+    <loc>https://pi14tech.com/nodejs/</loc>
+  </url>
+  
+  <url>
     <loc>https://pi14tech.com/posts/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -167,6 +220,14 @@
   
   <url>
     <loc>https://pi14tech.com/git/git-revert-merged-commit/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pi14tech.com/linux/scp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pi14tech.com/technology/linux/scp/</loc>
   </url>
   
   <url>
@@ -179,24 +240,10 @@
   
   <url>
     <loc>https://pi14tech.com/tags/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://pi14tech.com/technology/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://pi14tech.com/postman/ci-cd/</loc>
-  </url>
-  
-  <url>
-    <loc>https://pi14tech.com/linux/scp/</loc>
-  </url>
-  
-  <url>
-    <loc>https://pi14tech.com/technology/linux/scp/</loc>
   </url>
   
 </urlset>

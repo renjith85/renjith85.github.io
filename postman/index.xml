@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Postman on A programmers notebook</title>
@@ -16,12 +16,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pi14tech.com/postman/assertions/</guid>
-      <description>== Postman Response Assertions
-Within postman, test assertions can be included to check the validity of the API request and response objects. Postman test assertions follows a BDD style and are based on the capabilities of the Chai Assertion Library. Read more about Chai at https://www.chaijs.com/api/bdd/
-.Assert status
-[source,json] pm.test(&amp;ldquo;Must fail with response status&amp;rdquo;, function () { pm.response.to.have.status(400);
-}); .Assert json response body element
-[source,json] pm.test(&amp;ldquo;Verify jwt issuer&amp;rdquo;, function () { var jsonData = pm.</description>
+      <description>Postman Response Assertions Within postman, test assertions can be included to check the validity of the API request and response objects. Postman test assertions follows a BDD style and are based on the capabilities of the Chai Assertion Library. Read more about Chai at https://www.chaijs.com/api/bdd/
+ Assert status pm.test(&#34;Must fail with response status&#34;, function () { pm.response.to.have.status(400); });   Assert json response body element pm.test(&#34;Verify jwt issuer&#34;, function () { var jsonData = pm.</description>
     </item>
     
     <item>
@@ -30,10 +26,8 @@ Within postman, test assertions can be included to check the validity of the API
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pi14tech.com/postman/hmac-generator/</guid>
-      <description>== HMAC Generator Snippet
-This is a sample code snippet for HMAC generation. In case you want to call an API that is protected using HMAC, below snippet can be used to do the same. Few HMAC providers might have slightly different algorithms, so please make sure the one you are using matches the outline below.
-[source,json] var hmacApplicationUuid = postman.getEnvironmentVariable(&amp;ldquo;hmacApplicationUuid&amp;rdquo;) console.log(hmacApplicationUuid) var hmacSecretKey = postman.getEnvironmentVariable(&amp;ldquo;hmacApplicationKey&amp;rdquo;) console.log(hmacSecretKey)
-var targerApiUrl = request.</description>
+      <description>HMAC Generator Snippet This is a sample code snippet for HMAC generation. In case you want to call an API that is protected using HMAC, below snippet can be used to do the same. Few HMAC providers might have slightly different algorithms, so please make sure the one you are using matches the outline below.
+ var hmacApplicationUuid = postman.getEnvironmentVariable(&#34;hmacApplicationUuid&#34;) console.log(hmacApplicationUuid) var hmacSecretKey = postman.getEnvironmentVariable(&#34;hmacApplicationKey&#34;) console.log(hmacSecretKey) var targerApiUrl = request.url.replace(/{{(\w*)}}/g,function(str,key) { return postman.</description>
     </item>
     
     <item>
@@ -42,16 +36,9 @@ var targerApiUrl = request.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pi14tech.com/postman/newman/</guid>
-      <description>== Newman
-Newman is the commandline equivalent of postman gui
-[source,json] sudo npm install -g newman;
-cd postman-snippets;
-./run_workflows.sh json envs/env.postman_environment.json Iterate through your postman scripts #!/usr/bin/env bash ENVIRONMENT=envs/env.postman_environment.json REPORT_TYPE=html FLIP_POLICIES_BACK_TO_CORE=false
-if [ -n &amp;ldquo;$1&amp;rdquo; ]; then REPORT_TYPE=$1 fi
-if [ -n &amp;ldquo;$2&amp;rdquo; ]; then ENVIRONMENT=$2 fi
-if [ -d reports ]; then rm -r reports fi
-mkdir -p reports rm reports/postman.log 2&amp;gt; /dev/null
-for file in workflow-collections/*.json; do WORKFLOW=$(echo $file | sed -e &amp;ldquo;s/^workflow-collections\//report-/&amp;rdquo; -e &amp;ldquo;s/.</description>
+      <description>Newman Newman is the commandline equivalent of postman gui
+ sudo npm install -g newman; cd postman-snippets; ./run_workflows.sh json envs/env.postman_environment.json   Iterate through your postman scripts
+ #!/usr/bin/env bash ENVIRONMENT=envs/env.postman_environment.json REPORT_TYPE=html FLIP_POLICIES_BACK_TO_CORE=false if [ -n &#34;$1&#34; ]; then REPORT_TYPE=$1 fi if [ -n &#34;$2&#34; ]; then ENVIRONMENT=$2 fi if [ -d reports ]; then rm -r reports fi mkdir -p reports rm reports/postman.log 2&amp;gt; /dev/null for file in workflow-collections/*.json; do WORKFLOW=$(echo $file | sed -e &#34;</description>
     </item>
     
     <item>
@@ -60,8 +47,8 @@ for file in workflow-collections/*.json; do WORKFLOW=$(echo $file | sed -e &amp;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pi14tech.com/postman/postman-snippets/</guid>
-      <description>== Postman Snippets
-include::loop-request.adoc include::skip-request.adoc include::hmac-generator.adoc include::topt-verifier.adoc include::symmetric-jwt-generator.adoc</description>
+      <description>Postman Snippets include::loop-request.adoc include::skip-request.adoc include::hmac-generator.adoc include::topt-verifier.adoc include::symmetric-jwt-generator.adoc
+   </description>
     </item>
     
     <item>
@@ -70,15 +57,7 @@ include::loop-request.adoc include::skip-request.adoc include::hmac-generator.ad
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pi14tech.com/postman/pre-request-scripts/</guid>
-      <description>== Pre request
-.Set a random counter
-[source,json] var randomCounter = Math.floor(Math.random() * 1000); postman.setGlobalVariable(&amp;lsquo;userEmailCounter&amp;rsquo;, randomCounter); postman.setEnvironmentVariable(&amp;ldquo;userPassword&amp;rdquo;,&amp;ldquo;P@ssw0rd!&amp;rdquo;)
-console.log(randomCounter) .Assert json response body
-[source,json] pm.test(&amp;ldquo;Verify jwt issuer&amp;rdquo;, function () { var jsonData = pm.response.json(); pm.expect(jsonData.code).to.eql(&amp;ldquo;ASMS-001&amp;rdquo;);
-}); .Decode JWT
-[source,json] pm.test(&amp;ldquo;Verify it has response body&amp;rdquo;, function () { var jsonData = pm.response.json(); // pm.expect(jsonData.code).to.eql(&amp;ldquo;ASMS-001&amp;rdquo;); });
-function jwt_decode(jwt) { var parts = jwt.split(&amp;lsquo;.&amp;rsquo;); // header, payload, signature return JSON.parse(atob(parts[1])); }
-var data = JSON.</description>
+      <description>Pre request Set a random counter var randomCounter = Math.floor(Math.random() * 1000); postman.setGlobalVariable(&#39;userEmailCounter&#39;, randomCounter); postman.setEnvironmentVariable(&#34;userPassword&#34;,&#34;P@ssw0rd!&#34;) console.log(randomCounter)   Assert json response body pm.test(&#34;Verify jwt issuer&#34;, function () { var jsonData = pm.response.json(); pm.expect(jsonData.code).to.eql(&#34;ASMS-001&#34;); });   Decode JWT pm.test(&#34;Verify it has response body&#34;, function () { var jsonData = pm.response.json(); // pm.expect(jsonData.code).to.eql(&#34;ASMS-001&#34;); }); function jwt_decode(jwt) { var parts = jwt.split(&#39;.&#39;); // header, payload, signature return JSON.parse(atob(parts[1])); } var data = JSON.</description>
     </item>
     
     <item>
@@ -87,12 +66,7 @@ var data = JSON.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pi14tech.com/postman/request-manipulation/</guid>
-      <description>== Loop
-var randomCounter = postman.getGlobalVariable(&amp;lsquo;lockOutCount&amp;rsquo;); console.log(randomCounter)
-//assertions tests[&amp;ldquo;API expected to fail with&amp;rdquo;] = responseCode.code === 401;
-var data = JSON.parse(responseBody);
-if(randomCounter &amp;lt; 5) { tests[&amp;ldquo;Fail with invalid creds&amp;rdquo;] = data.code === &amp;ldquo;Authentication.InvalidCredentials&amp;rdquo;; } else { tests[&amp;ldquo;Fail with unauthenticated&amp;rdquo;] = data.code === &amp;ldquo;Authentication.Unauthenticated&amp;rdquo;; tests[&amp;ldquo;Check if preferred recovery is Call HelpDesk&amp;rdquo;] = data.details.recovery[0].id === &amp;ldquo;CallHelpDesk&amp;rdquo;; tests[&amp;ldquo;Check if preferred recovery type is AuthN&amp;rdquo;] = data.details.recovery[0].type === &amp;ldquo;AuthN&amp;rdquo;; }
-//loop for x times the same test</description>
+      <description>Loop var randomCounter = postman.getGlobalVariable(&#39;lockOutCount&#39;); console.log(randomCounter) //assertions tests[&#34;API expected to fail with&#34;] = responseCode.code === 401; var data = JSON.parse(responseBody); if(randomCounter &amp;lt; 5) { tests[&#34;Fail with invalid creds&#34;] = data.code === &#34;Authentication.InvalidCredentials&#34;; } else { tests[&#34;Fail with unauthenticated&#34;] = data.code === &#34;Authentication.Unauthenticated&#34;; tests[&#34;Check if preferred recovery is Call HelpDesk&#34;] = data.details.recovery[0].id === &#34;CallHelpDesk&#34;; tests[&#34;Check if preferred recovery type is AuthN&#34;] = data.details.recovery[0].type === &#34;AuthN&#34;; } //loop for x times the same test randomCounter = parseInt(randomCounter) + 1 postman.</description>
     </item>
     
     <item>
@@ -110,15 +84,7 @@ if(randomCounter &amp;lt; 5) { tests[&amp;ldquo;Fail with invalid creds&amp;rdqu
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pi14tech.com/postman/symmetric-jwt-generator/</guid>
-      <description>== JWT Generator
-[source,json] function base64url(source) { // Encode in classical base64 encodedSource = CryptoJS.enc.Base64.stringify(source);
-// Remove padding equal characters encodedSource = encodedSource.replace(/=+$/, &amp;ldquo;);
-// Replace characters according to base64url specifications encodedSource = encodedSource.replace(/+/g, &amp;lsquo;-&amp;rsquo;); encodedSource = encodedSource.replace(/\//g, &amp;lsquo;_&amp;lsquo;);
-return encodedSource; }
-// Generate JWT
-var header = { &amp;ldquo;alg&amp;rdquo;: &amp;ldquo;HS256&amp;rdquo;, &amp;ldquo;typ&amp;rdquo;: &amp;ldquo;JWT&amp;rdquo; };
-var stringifiedHeader = CryptoJS.enc.Utf8.parse(JSON.stringify(header)); var encodedHeader = base64url(stringifiedHeader);
-//TODO: Feed in a dummy payload for the JWT var data = { &amp;ldquo;content&amp;rdquo; : { &amp;ldquo;key1&amp;rdquo;: &amp;ldquo;value1&amp;rdquo; } };</description>
+      <description>JWT Generator function base64url(source) { // Encode in classical base64 encodedSource = CryptoJS.enc.Base64.stringify(source); // Remove padding equal characters encodedSource = encodedSource.replace(/=+$/, &#39;&#39;); // Replace characters according to base64url specifications encodedSource = encodedSource.replace(/\+/g, &#39;-&#39;); encodedSource = encodedSource.replace(/\//g, &#39;_&#39;); return encodedSource; } // Generate JWT var header = { &#34;alg&#34;: &#34;HS256&#34;, &#34;typ&#34;: &#34;JWT&#34; }; var stringifiedHeader = CryptoJS.enc.Utf8.parse(JSON.stringify(header)); var encodedHeader = base64url(stringifiedHeader); //TODO: Feed in a dummy payload for the JWT var data = { &#34;</description>
     </item>
     
     <item>
@@ -127,10 +93,7 @@ var stringifiedHeader = CryptoJS.enc.Utf8.parse(JSON.stringify(header)); var enc
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pi14tech.com/postman/totp-verifier/</guid>
-      <description>== TOTP verifier
-.TOTP Sessi updateOtp()
-function dec2hex(s) { return (s &amp;lt; 15.5 ? &amp;lsquo;0&amp;rsquo; : &amp;ldquo;) + Math.round(s).toString(16); } function hex2dec(s) { return parseInt(s, 16); }
-function base32tohex(base32) { var base32chars = &amp;quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ234567&amp;quot;; var bits = &amp;quot;&amp;quot;; var hex = &amp;quot;&amp;quot;; for (var i = 0; i &amp;lt; base32.length; i++) { var val = base32chars.indexOf(base32.charAt(i).toUpperCase()); bits += leftpad(val.toString(2), 5, &#39;0&#39;); } for (var j = 0; j+4 &amp;lt;= bits.</description>
+      <description>TOTP verifier TOTP Sessi  updateOtp() function dec2hex(s) { return (s &amp;lt; 15.5 ? &#39;0&#39; : &#39;&#39;) + Math.round(s).toString(16); } function hex2dec(s) { return parseInt(s, 16); } function base32tohex(base32) { var base32chars = &#34;ABCDEFGHIJKLMNOPQRSTUVWXYZ234567&#34;; var bits = &#34;&#34;; var hex = &#34;&#34;; for (var i = 0; i &amp;lt; base32.length; i++) { var val = base32chars.indexOf(base32.charAt(i).toUpperCase()); bits += leftpad(val.toString(2), 5, &#39;0&#39;); } for (var j = 0; j+4 &amp;lt;= bits.length;j+=4) { var chunk = bits.</description>
     </item>
     
     <item>
